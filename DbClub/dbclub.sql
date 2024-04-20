@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 20 2024 г., 10:24
+-- Время создания: Апр 20 2024 г., 15:25
 -- Версия сервера: 10.4.32-MariaDB
 -- Версия PHP: 8.2.12
 
@@ -126,8 +126,8 @@ INSERT INTO `user` (`IdUser`, `Login`, `Password`, `Role`, `IsLock`, `DateLock`)
 
 CREATE TABLE `visitors` (
   `id` int(11) NOT NULL,
-  `first_name` varchar(50) NOT NULL,
   `surname` varchar(50) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email` varchar(100) DEFAULT NULL,
   `phone` varchar(11) DEFAULT NULL,
@@ -138,12 +138,12 @@ CREATE TABLE `visitors` (
 -- Дамп данных таблицы `visitors`
 --
 
-INSERT INTO `visitors` (`id`, `first_name`, `surname`, `last_name`, `email`, `phone`, `registration_date`) VALUES
-(1, 'Иван', 'Ксенонов', 'Иванов', 'ivan.ivanov@example.com', '79285738621', '2024-02-05'),
-(2, 'Петр', 'Ранько', 'Петров', 'petr.petrov@example.com', '79186925626', '2023-02-15'),
-(3, 'Анна', 'Шевченко', 'Сидорова', 'anna.sidorova@example.com', '79980176921', '2019-12-25'),
-(4, 'Ольга', 'Гальненко', 'Кузнецова', 'olga.kuznetsova@example.com', '79961807625', '2023-04-05'),
-(5, 'Сергей', 'Доминин', 'Андреевич', 'sergey.smirnov@example.com', '79816275692', '2020-12-09');
+INSERT INTO `visitors` (`id`, `surname`, `first_name`, `last_name`, `email`, `phone`, `registration_date`) VALUES
+(1, 'Ксенонов', 'Иван', 'Иванов', 'ivan.ivanov@example.com', '79285738621', '2024-02-05'),
+(2, 'Ранько', 'Петр', 'Петров', 'petr.petrov@example.com', '79186925626', '2023-02-15'),
+(3, 'Шевченко', 'Анна', 'Сидорова', 'anna.sidorova@example.com', '79980176921', '2019-12-25'),
+(4, 'Гальненко', 'Ольга', 'Кузнецова', 'olga.kuznetsova@example.com', '79961807625', '2023-04-05'),
+(5, 'Доминин', 'Сергей', 'Андреевич', 'sergey.smirnov@example.com', '79816275692', '2020-12-09');
 
 -- --------------------------------------------------------
 
@@ -254,7 +254,7 @@ ALTER TABLE `visitors`
 -- AUTO_INCREMENT для таблицы `visits`
 --
 ALTER TABLE `visits`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

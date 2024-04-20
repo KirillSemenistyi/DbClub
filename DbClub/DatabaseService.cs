@@ -37,6 +37,35 @@ namespace DbClub
             return database.connection;
         }
 
+        public void LoadDataGrid(string cmd, DataTable table, DataGridView dataGrid, int it,ref bool flag)
+        {
+            flag = true;
+            table.Clear();
+            using (MySqlCommand command = new MySqlCommand(cmd, getConnection()))
+            {
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+            }
+            dataGrid.DataSource = table;
+            for (int i = 0; i < it; i++) dataGrid.Columns[i].Visible = false;
+            flag = false;
+        }
+        public void LoadDataGrid(string cmd, DataTable table, DataGridView dataGrid, int it, string[] values,ref bool flag)
+        {
+            flag = true;
+            string[] parametrs = FindParametrsInCommand(cmd);
+            table.Clear();
+            using (MySqlCommand command = new MySqlCommand(cmd, getConnection()))
+            {
+                for (int i = 0; i < parametrs.Length; i++) command.Parameters.AddWithValue(parametrs[i], values[i]);
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+            }
+            dataGrid.DataSource = table;
+            for (int i = 0; i < it; i++) dataGrid.Columns[i].Visible = false;
+            flag =false;
+        }
+
         public void LoadDataGrid(string cmd, DataTable table, DataGridView dataGrid, int it)
         {
             table.Clear();

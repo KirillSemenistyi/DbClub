@@ -19,7 +19,7 @@ namespace DbClub
         {
             InitializeComponent();
             MainForm.db = new Database(new MySqlConnection("Server=127.0.0.1;Port=3306;User ID=root; Database=dbclub;Allow Zero DateTime=True"));
-            MainForm.serviceDb = new DatabaseService(MainForm.db);
+            MainForm.dbService = new DatabaseService(MainForm.db);
         }
 
 
@@ -51,7 +51,7 @@ namespace DbClub
             DataTable table;
 
             //Попытка найти пользователя в таблице
-            table = MainForm.serviceDb.OperationSelect("SELECT * FROM user WHERE Login = @login;", [textBoxLog.Text]);
+            table = MainForm.dbService.OperationSelect("SELECT * FROM user WHERE Login = @login;", [textBoxLog.Text]);
 
 
             if (table.Rows.Count > 0)

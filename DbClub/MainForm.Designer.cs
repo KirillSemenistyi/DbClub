@@ -43,83 +43,74 @@
             DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
             tableLayoutPanel1 = new TableLayoutPanel();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             butCar = new Button();
             tabControlMain = new TabControl();
-            tabPageProduct = new TabPage();
+            tabPageComp = new TabPage();
+            dataGridViewComp = new DataGridView();
             tableLayoutPanel5 = new TableLayoutPanel();
             butDeleteCar = new Button();
             butEditCar = new Button();
             butAddCar = new Button();
-            dataGridViewCar = new DataGridView();
-            tabPageEmployee = new TabPage();
-            groupBox7 = new GroupBox();
-            comboBoxPost = new ComboBox();
-            checkBoxPost = new CheckBox();
-            butPost = new Button();
-            dataGridViewEmployee = new DataGridView();
+            tabPageVisitor = new TabPage();
             tableLayoutPanel3 = new TableLayoutPanel();
-            butDeleteEmployee = new Button();
-            butEditEmployee = new Button();
-            butAddEmployee = new Button();
-            tabPagePurchase = new TabPage();
-            groupBox4 = new GroupBox();
-            dataGridViewPurchase = new DataGridView();
-            groupBox3 = new GroupBox();
-            dataGridViewProvider = new DataGridView();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            dataGridViewVisitors = new DataGridView();
+            tabPageService = new TabPage();
+            dataGridViewService = new DataGridView();
             tableLayoutPanel2 = new TableLayoutPanel();
-            butDeleteProvider = new Button();
-            butEditProvider = new Button();
-            butAddProvider = new Button();
-            tableLayoutPanel7 = new TableLayoutPanel();
-            butDeletePurchase = new Button();
-            butEditPurchase = new Button();
-            butAddPurchase = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
             tabPageOrder = new TabPage();
-            groupBox5 = new GroupBox();
-            dataGridViewSale = new DataGridView();
-            groupBox6 = new GroupBox();
-            dataGridViewClient = new DataGridView();
+            tableLayoutPanel7 = new TableLayoutPanel();
+            button15 = new Button();
+            button16 = new Button();
+            button17 = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
-            butDeleteClient = new Button();
-            butEditClient = new Button();
-            butAddClient = new Button();
-            tableLayoutPanel8 = new TableLayoutPanel();
-            butDeleteSale = new Button();
-            butEditSale = new Button();
-            butAddSale = new Button();
+            butDeleteVisit = new Button();
+            butEditVisit = new Button();
+            butAddVisit = new Button();
+            groupBox5 = new GroupBox();
+            dataGridViewOrder = new DataGridView();
+            groupBox6 = new GroupBox();
+            dataGridViewVisit = new DataGridView();
+            tabPageAdmin = new TabPage();
+            tabPageCopy = new TabPage();
             menuStrip1 = new MenuStrip();
             оПрограммеToolStripMenuItem = new ToolStripMenuItem();
+            обАвтореToolStripMenuItem = new ToolStripMenuItem();
+            справкаToolStripMenuItem = new ToolStripMenuItem();
             администрированиеToolStripMenuItem = new ToolStripMenuItem();
+            резервноеКопированиеToolStripMenuItem = new ToolStripMenuItem();
+            tableLayoutPanel6 = new TableLayoutPanel();
+            button13 = new Button();
+            button14 = new Button();
             tableLayoutPanel1.SuspendLayout();
             tabControlMain.SuspendLayout();
-            tabPageProduct.SuspendLayout();
+            tabPageComp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewComp).BeginInit();
             tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewCar).BeginInit();
-            tabPageEmployee.SuspendLayout();
-            groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewEmployee).BeginInit();
+            tabPageVisitor.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
-            tabPagePurchase.SuspendLayout();
-            groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPurchase).BeginInit();
-            groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewProvider).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVisitors).BeginInit();
+            tabPageService.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewService).BeginInit();
             tableLayoutPanel2.SuspendLayout();
-            tableLayoutPanel7.SuspendLayout();
             tabPageOrder.SuspendLayout();
-            groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSale).BeginInit();
-            groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewClient).BeginInit();
+            tableLayoutPanel7.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
-            tableLayoutPanel8.SuspendLayout();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).BeginInit();
+            groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVisit).BeginInit();
             menuStrip1.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -133,22 +124,22 @@
             tableLayoutPanel1.Controls.Add(button2, 0, 0);
             tableLayoutPanel1.Controls.Add(button1, 0, 0);
             tableLayoutPanel1.Controls.Add(butCar, 0, 0);
-            tableLayoutPanel1.Location = new Point(103, 47);
+            tableLayoutPanel1.Location = new Point(271, 44);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(1068, 85);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // button3
             // 
-            button3.BackColor = Color.FromArgb(210, 74, 74);
+            button3.BackColor = Color.FromArgb(187, 32, 38);
             button3.Dock = DockStyle.Fill;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button3.ForeColor = Color.FromArgb(239, 239, 239);
+            button3.Image = Properties.Resources.IconSale;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
             button3.Location = new Point(537, 3);
             button3.Name = "button3";
@@ -156,18 +147,20 @@
             button3.Size = new Size(261, 79);
             button3.TabIndex = 3;
             button3.Tag = "2";
-            button3.Text = "Поставки";
+            button3.Text = "Услуги";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += butCatalog_Click;
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(210, 74, 74);
+            button2.BackColor = Color.FromArgb(187, 32, 38);
             button2.Dock = DockStyle.Fill;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button2.ForeColor = Color.FromArgb(239, 239, 239);
+            button2.Image = Properties.Resources.IconOrder;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.Location = new Point(804, 3);
             button2.Name = "button2";
@@ -178,15 +171,17 @@
             button2.Text = "Заказы";
             button2.TextAlign = ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += butCatalog_Click;
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(210, 74, 74);
+            button1.BackColor = Color.FromArgb(187, 32, 38);
             button1.Dock = DockStyle.Fill;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button1.ForeColor = Color.FromArgb(239, 239, 239);
+            button1.Image = Properties.Resources.IconComp1;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(3, 3);
             button1.Name = "button1";
@@ -194,18 +189,20 @@
             button1.Size = new Size(261, 79);
             button1.TabIndex = 1;
             button1.Tag = "0";
-            button1.Text = "Автомобили";
+            button1.Text = "Компьютеры";
             button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += butCatalog_Click;
             // 
             // butCar
             // 
-            butCar.BackColor = Color.FromArgb(210, 74, 74);
+            butCar.BackColor = Color.FromArgb(187, 32, 38);
             butCar.Dock = DockStyle.Fill;
             butCar.FlatAppearance.BorderSize = 0;
             butCar.FlatStyle = FlatStyle.Flat;
             butCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butCar.ForeColor = Color.FromArgb(239, 239, 239);
+            butCar.Image = Properties.Resources.IconEmployee;
             butCar.ImageAlign = ContentAlignment.MiddleLeft;
             butCar.Location = new Point(270, 3);
             butCar.Name = "butCar";
@@ -213,39 +210,79 @@
             butCar.Size = new Size(261, 79);
             butCar.TabIndex = 0;
             butCar.Tag = "1";
-            butCar.Text = "Персонал";
+            butCar.Text = "Клиенты";
             butCar.TextAlign = ContentAlignment.MiddleRight;
             butCar.UseVisualStyleBackColor = false;
+            butCar.Click += butCatalog_Click;
             // 
             // tabControlMain
             // 
             tabControlMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControlMain.Appearance = TabAppearance.FlatButtons;
-            tabControlMain.Controls.Add(tabPageProduct);
-            tabControlMain.Controls.Add(tabPageEmployee);
-            tabControlMain.Controls.Add(tabPagePurchase);
+            tabControlMain.Controls.Add(tabPageComp);
+            tabControlMain.Controls.Add(tabPageVisitor);
+            tabControlMain.Controls.Add(tabPageService);
             tabControlMain.Controls.Add(tabPageOrder);
+            tabControlMain.Controls.Add(tabPageAdmin);
+            tabControlMain.Controls.Add(tabPageCopy);
             tabControlMain.ItemSize = new Size(100, 10);
             tabControlMain.Location = new Point(15, 137);
             tabControlMain.Margin = new Padding(6, 5, 6, 5);
             tabControlMain.Name = "tabControlMain";
             tabControlMain.SelectedIndex = 0;
-            tabControlMain.Size = new Size(1328, 621);
+            tabControlMain.Size = new Size(1551, 621);
             tabControlMain.SizeMode = TabSizeMode.Fixed;
             tabControlMain.TabIndex = 3;
             // 
-            // tabPageProduct
+            // tabPageComp
             // 
-            tabPageProduct.Controls.Add(dataGridViewCar);
-            tabPageProduct.Controls.Add(tableLayoutPanel5);
-            tabPageProduct.Location = new Point(4, 14);
-            tabPageProduct.Margin = new Padding(6, 5, 6, 5);
-            tabPageProduct.Name = "tabPageProduct";
-            tabPageProduct.Padding = new Padding(6, 5, 6, 5);
-            tabPageProduct.Size = new Size(1320, 603);
-            tabPageProduct.TabIndex = 0;
-            tabPageProduct.Text = "Товары";
-            tabPageProduct.UseVisualStyleBackColor = true;
+            tabPageComp.Controls.Add(dataGridViewComp);
+            tabPageComp.Controls.Add(tableLayoutPanel5);
+            tabPageComp.Location = new Point(4, 14);
+            tabPageComp.Margin = new Padding(6, 5, 6, 5);
+            tabPageComp.Name = "tabPageComp";
+            tabPageComp.Padding = new Padding(6, 5, 6, 5);
+            tabPageComp.Size = new Size(1543, 603);
+            tabPageComp.TabIndex = 0;
+            tabPageComp.Text = "Компьютеры";
+            tabPageComp.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewComp
+            // 
+            dataGridViewComp.AllowUserToAddRows = false;
+            dataGridViewComp.AllowUserToDeleteRows = false;
+            dataGridViewComp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewComp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridViewComp.BackgroundColor = SystemColors.Control;
+            dataGridViewComp.BorderStyle = BorderStyle.None;
+            dataGridViewComp.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridViewComp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewComp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridViewComp.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewComp.Location = new Point(3, 3);
+            dataGridViewComp.MultiSelect = false;
+            dataGridViewComp.Name = "dataGridViewComp";
+            dataGridViewComp.ReadOnly = true;
+            dataGridViewComp.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridViewComp.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewComp.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewComp.Size = new Size(1531, 526);
+            dataGridViewComp.TabIndex = 5;
             // 
             // tableLayoutPanel5
             // 
@@ -257,7 +294,7 @@
             tableLayoutPanel5.Controls.Add(butDeleteCar, 0, 0);
             tableLayoutPanel5.Controls.Add(butEditCar, 0, 0);
             tableLayoutPanel5.Controls.Add(butAddCar, 0, 0);
-            tableLayoutPanel5.Location = new Point(173, 540);
+            tableLayoutPanel5.Location = new Point(271, 540);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -272,6 +309,7 @@
             butDeleteCar.FlatStyle = FlatStyle.Flat;
             butDeleteCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butDeleteCar.ForeColor = Color.FromArgb(239, 239, 239);
+            butDeleteCar.Image = Properties.Resources.IconDelete;
             butDeleteCar.ImageAlign = ContentAlignment.MiddleLeft;
             butDeleteCar.Location = new Point(682, 3);
             butDeleteCar.Margin = new Padding(20, 3, 20, 3);
@@ -291,6 +329,7 @@
             butEditCar.FlatStyle = FlatStyle.Flat;
             butEditCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butEditCar.ForeColor = Color.FromArgb(239, 239, 239);
+            butEditCar.Image = Properties.Resources.IconEdit;
             butEditCar.ImageAlign = ContentAlignment.MiddleLeft;
             butEditCar.Location = new Point(351, 3);
             butEditCar.Margin = new Padding(20, 3, 20, 3);
@@ -310,6 +349,7 @@
             butAddCar.FlatStyle = FlatStyle.Flat;
             butAddCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butAddCar.ForeColor = Color.FromArgb(239, 239, 239);
+            butAddCar.Image = Properties.Resources.IconAdd;
             butAddCar.ImageAlign = ContentAlignment.MiddleLeft;
             butAddCar.Location = new Point(20, 3);
             butAddCar.Margin = new Padding(20, 3, 20, 3);
@@ -321,138 +361,16 @@
             butAddCar.TextAlign = ContentAlignment.MiddleRight;
             butAddCar.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewCar
+            // tabPageVisitor
             // 
-            dataGridViewCar.AllowUserToAddRows = false;
-            dataGridViewCar.AllowUserToDeleteRows = false;
-            dataGridViewCar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewCar.BackgroundColor = SystemColors.Control;
-            dataGridViewCar.BorderStyle = BorderStyle.None;
-            dataGridViewCar.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Window;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridViewCar.DefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCar.Location = new Point(9, 8);
-            dataGridViewCar.Name = "dataGridViewCar";
-            dataGridViewCar.ReadOnly = true;
-            dataGridViewCar.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridViewCar.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewCar.Size = new Size(1302, 529);
-            dataGridViewCar.TabIndex = 5;
-            // 
-            // tabPageEmployee
-            // 
-            tabPageEmployee.Controls.Add(groupBox7);
-            tabPageEmployee.Controls.Add(butPost);
-            tabPageEmployee.Controls.Add(dataGridViewEmployee);
-            tabPageEmployee.Controls.Add(tableLayoutPanel3);
-            tabPageEmployee.Location = new Point(4, 14);
-            tabPageEmployee.Name = "tabPageEmployee";
-            tabPageEmployee.Size = new Size(1494, 644);
-            tabPageEmployee.TabIndex = 3;
-            tabPageEmployee.Text = "Персонал";
-            tabPageEmployee.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            groupBox7.Controls.Add(comboBoxPost);
-            groupBox7.Controls.Add(checkBoxPost);
-            groupBox7.FlatStyle = FlatStyle.Flat;
-            groupBox7.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox7.Location = new Point(12, 8);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(366, 72);
-            groupBox7.TabIndex = 15;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Должность";
-            // 
-            // comboBoxPost
-            // 
-            comboBoxPost.Dock = DockStyle.Fill;
-            comboBoxPost.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxPost.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBoxPost.FormattingEnabled = true;
-            comboBoxPost.Location = new Point(3, 30);
-            comboBoxPost.Name = "comboBoxPost";
-            comboBoxPost.Size = new Size(360, 39);
-            comboBoxPost.TabIndex = 16;
-            // 
-            // checkBoxPost
-            // 
-            checkBoxPost.AutoSize = true;
-            checkBoxPost.Checked = true;
-            checkBoxPost.CheckState = CheckState.Checked;
-            checkBoxPost.Font = new Font("Marker Felt", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            checkBoxPost.Location = new Point(174, 0);
-            checkBoxPost.Name = "checkBoxPost";
-            checkBoxPost.Size = new Size(195, 30);
-            checkBoxPost.TabIndex = 15;
-            checkBoxPost.Text = "Все должности";
-            checkBoxPost.UseVisualStyleBackColor = true;
-            // 
-            // butPost
-            // 
-            butPost.BackColor = Color.FromArgb(210, 74, 74);
-            butPost.FlatAppearance.BorderSize = 0;
-            butPost.FlatStyle = FlatStyle.Flat;
-            butPost.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butPost.ForeColor = Color.FromArgb(239, 239, 239);
-            butPost.ImageAlign = ContentAlignment.MiddleLeft;
-            butPost.Location = new Point(1045, 28);
-            butPost.Margin = new Padding(20, 3, 20, 3);
-            butPost.Name = "butPost";
-            butPost.Padding = new Padding(10, 0, 0, 0);
-            butPost.Size = new Size(429, 49);
-            butPost.TabIndex = 0;
-            butPost.Text = "Справочник должностей";
-            butPost.TextAlign = ContentAlignment.MiddleRight;
-            butPost.UseVisualStyleBackColor = false;
-            // 
-            // dataGridViewEmployee
-            // 
-            dataGridViewEmployee.AllowUserToAddRows = false;
-            dataGridViewEmployee.AllowUserToDeleteRows = false;
-            dataGridViewEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewEmployee.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewEmployee.BackgroundColor = SystemColors.Control;
-            dataGridViewEmployee.BorderStyle = BorderStyle.None;
-            dataGridViewEmployee.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dataGridViewEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewEmployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dataGridViewEmployee.DefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewEmployee.Location = new Point(6, 83);
-            dataGridViewEmployee.MultiSelect = false;
-            dataGridViewEmployee.Name = "dataGridViewEmployee";
-            dataGridViewEmployee.ReadOnly = true;
-            dataGridViewEmployee.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dataGridViewEmployee.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewEmployee.Size = new Size(1485, 497);
-            dataGridViewEmployee.TabIndex = 6;
+            tabPageVisitor.Controls.Add(tableLayoutPanel3);
+            tabPageVisitor.Controls.Add(dataGridViewVisitors);
+            tabPageVisitor.Location = new Point(4, 14);
+            tabPageVisitor.Name = "tabPageVisitor";
+            tabPageVisitor.Size = new Size(1543, 603);
+            tabPageVisitor.TabIndex = 3;
+            tabPageVisitor.Text = "Клиенты";
+            tabPageVisitor.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -461,185 +379,162 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.Controls.Add(butDeleteEmployee, 0, 0);
-            tableLayoutPanel3.Controls.Add(butEditEmployee, 0, 0);
-            tableLayoutPanel3.Controls.Add(butAddEmployee, 0, 0);
-            tableLayoutPanel3.Location = new Point(216, 586);
+            tableLayoutPanel3.Controls.Add(button4, 0, 0);
+            tableLayoutPanel3.Controls.Add(button5, 0, 0);
+            tableLayoutPanel3.Controls.Add(button6, 0, 0);
+            tableLayoutPanel3.Location = new Point(271, 540);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(1068, 55);
-            tableLayoutPanel3.TabIndex = 5;
+            tableLayoutPanel3.Size = new Size(995, 55);
+            tableLayoutPanel3.TabIndex = 15;
             // 
-            // butDeleteEmployee
+            // button4
             // 
-            butDeleteEmployee.BackColor = Color.FromArgb(210, 74, 74);
-            butDeleteEmployee.Dock = DockStyle.Fill;
-            butDeleteEmployee.FlatAppearance.BorderSize = 0;
-            butDeleteEmployee.FlatStyle = FlatStyle.Flat;
-            butDeleteEmployee.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butDeleteEmployee.ForeColor = Color.FromArgb(239, 239, 239);
-            butDeleteEmployee.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteEmployee.Location = new Point(732, 3);
-            butDeleteEmployee.Margin = new Padding(20, 3, 20, 3);
-            butDeleteEmployee.Name = "butDeleteEmployee";
-            butDeleteEmployee.Padding = new Padding(10, 0, 0, 0);
-            butDeleteEmployee.Size = new Size(316, 49);
-            butDeleteEmployee.TabIndex = 3;
-            butDeleteEmployee.Text = "Удалить";
-            butDeleteEmployee.TextAlign = ContentAlignment.MiddleRight;
-            butDeleteEmployee.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.FromArgb(210, 74, 74);
+            button4.Dock = DockStyle.Fill;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button4.ForeColor = Color.FromArgb(239, 239, 239);
+            button4.Image = Properties.Resources.IconDelete;
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(682, 3);
+            button4.Margin = new Padding(20, 3, 20, 3);
+            button4.Name = "button4";
+            button4.Padding = new Padding(10, 0, 0, 0);
+            button4.Size = new Size(293, 49);
+            button4.TabIndex = 3;
+            button4.Text = "Удалить";
+            button4.TextAlign = ContentAlignment.MiddleRight;
+            button4.UseVisualStyleBackColor = false;
             // 
-            // butEditEmployee
+            // button5
             // 
-            butEditEmployee.BackColor = Color.FromArgb(210, 74, 74);
-            butEditEmployee.Dock = DockStyle.Fill;
-            butEditEmployee.FlatAppearance.BorderSize = 0;
-            butEditEmployee.FlatStyle = FlatStyle.Flat;
-            butEditEmployee.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butEditEmployee.ForeColor = Color.FromArgb(239, 239, 239);
-            butEditEmployee.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditEmployee.Location = new Point(376, 3);
-            butEditEmployee.Margin = new Padding(20, 3, 20, 3);
-            butEditEmployee.Name = "butEditEmployee";
-            butEditEmployee.Padding = new Padding(10, 0, 0, 0);
-            butEditEmployee.Size = new Size(316, 49);
-            butEditEmployee.TabIndex = 1;
-            butEditEmployee.Text = "Изменить";
-            butEditEmployee.TextAlign = ContentAlignment.MiddleRight;
-            butEditEmployee.UseVisualStyleBackColor = false;
+            button5.BackColor = Color.FromArgb(210, 74, 74);
+            button5.Dock = DockStyle.Fill;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button5.ForeColor = Color.FromArgb(239, 239, 239);
+            button5.Image = Properties.Resources.IconEdit;
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(351, 3);
+            button5.Margin = new Padding(20, 3, 20, 3);
+            button5.Name = "button5";
+            button5.Padding = new Padding(10, 0, 0, 0);
+            button5.Size = new Size(291, 49);
+            button5.TabIndex = 1;
+            button5.Text = "Изменить";
+            button5.TextAlign = ContentAlignment.MiddleRight;
+            button5.UseVisualStyleBackColor = false;
             // 
-            // butAddEmployee
+            // button6
             // 
-            butAddEmployee.BackColor = Color.FromArgb(210, 74, 74);
-            butAddEmployee.Dock = DockStyle.Fill;
-            butAddEmployee.FlatAppearance.BorderSize = 0;
-            butAddEmployee.FlatStyle = FlatStyle.Flat;
-            butAddEmployee.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butAddEmployee.ForeColor = Color.FromArgb(239, 239, 239);
-            butAddEmployee.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddEmployee.Location = new Point(20, 3);
-            butAddEmployee.Margin = new Padding(20, 3, 20, 3);
-            butAddEmployee.Name = "butAddEmployee";
-            butAddEmployee.Padding = new Padding(10, 0, 0, 0);
-            butAddEmployee.Size = new Size(316, 49);
-            butAddEmployee.TabIndex = 0;
-            butAddEmployee.Text = "Добавить";
-            butAddEmployee.TextAlign = ContentAlignment.MiddleRight;
-            butAddEmployee.UseVisualStyleBackColor = false;
+            button6.BackColor = Color.FromArgb(210, 74, 74);
+            button6.Dock = DockStyle.Fill;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button6.ForeColor = Color.FromArgb(239, 239, 239);
+            button6.Image = Properties.Resources.IconAdd;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(20, 3);
+            button6.Margin = new Padding(20, 3, 20, 3);
+            button6.Name = "button6";
+            button6.Padding = new Padding(10, 0, 0, 0);
+            button6.Size = new Size(291, 49);
+            button6.TabIndex = 0;
+            button6.Text = "Добавить";
+            button6.TextAlign = ContentAlignment.MiddleRight;
+            button6.UseVisualStyleBackColor = false;
             // 
-            // tabPagePurchase
+            // dataGridViewVisitors
             // 
-            tabPagePurchase.Controls.Add(groupBox4);
-            tabPagePurchase.Controls.Add(groupBox3);
-            tabPagePurchase.Controls.Add(tableLayoutPanel2);
-            tabPagePurchase.Controls.Add(tableLayoutPanel7);
-            tabPagePurchase.Location = new Point(4, 14);
-            tabPagePurchase.Margin = new Padding(6, 5, 6, 5);
-            tabPagePurchase.Name = "tabPagePurchase";
-            tabPagePurchase.Padding = new Padding(6, 5, 6, 5);
-            tabPagePurchase.Size = new Size(1494, 644);
-            tabPagePurchase.TabIndex = 1;
-            tabPagePurchase.Text = "Поставки";
-            tabPagePurchase.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(dataGridViewPurchase);
-            groupBox4.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox4.Location = new Point(748, 8);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(733, 543);
-            groupBox4.TabIndex = 9;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Поставки";
-            // 
-            // dataGridViewPurchase
-            // 
-            dataGridViewPurchase.AllowUserToAddRows = false;
-            dataGridViewPurchase.AllowUserToDeleteRows = false;
-            dataGridViewPurchase.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewPurchase.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewPurchase.BackgroundColor = SystemColors.Control;
-            dataGridViewPurchase.BorderStyle = BorderStyle.None;
-            dataGridViewPurchase.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Control;
-            dataGridViewCellStyle6.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewVisitors.AllowUserToAddRows = false;
+            dataGridViewVisitors.AllowUserToDeleteRows = false;
+            dataGridViewVisitors.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewVisitors.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridViewVisitors.BackgroundColor = SystemColors.Control;
+            dataGridViewVisitors.BorderStyle = BorderStyle.None;
+            dataGridViewVisitors.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridViewVisitors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewVisitors.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = SystemColors.Window;
+            dataGridViewCellStyle5.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridViewVisitors.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewVisitors.Location = new Point(3, 3);
+            dataGridViewVisitors.MultiSelect = false;
+            dataGridViewVisitors.Name = "dataGridViewVisitors";
+            dataGridViewVisitors.ReadOnly = true;
+            dataGridViewVisitors.RowHeadersWidth = 51;
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dataGridViewPurchase.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            dataGridViewPurchase.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewVisitors.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewVisitors.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewVisitors.Size = new Size(1537, 536);
+            dataGridViewVisitors.TabIndex = 6;
+            // 
+            // tabPageService
+            // 
+            tabPageService.Controls.Add(dataGridViewService);
+            tabPageService.Controls.Add(tableLayoutPanel2);
+            tabPageService.Location = new Point(4, 14);
+            tabPageService.Margin = new Padding(6, 5, 6, 5);
+            tabPageService.Name = "tabPageService";
+            tabPageService.Padding = new Padding(6, 5, 6, 5);
+            tabPageService.Size = new Size(1543, 603);
+            tabPageService.TabIndex = 1;
+            tabPageService.Text = "Услуги";
+            tabPageService.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewService
+            // 
+            dataGridViewService.AllowUserToAddRows = false;
+            dataGridViewService.AllowUserToDeleteRows = false;
+            dataGridViewService.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewService.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridViewService.BackgroundColor = SystemColors.Control;
+            dataGridViewService.BorderStyle = BorderStyle.None;
+            dataGridViewService.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
             dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = SystemColors.Window;
-            dataGridViewCellStyle7.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle7.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle7.BackColor = SystemColors.Control;
+            dataGridViewCellStyle7.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle7.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dataGridViewPurchase.DefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewPurchase.Dock = DockStyle.Fill;
-            dataGridViewPurchase.Location = new Point(3, 30);
-            dataGridViewPurchase.MultiSelect = false;
-            dataGridViewPurchase.Name = "dataGridViewPurchase";
-            dataGridViewPurchase.ReadOnly = true;
-            dataGridViewPurchase.RowHeadersWidth = 51;
+            dataGridViewService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewService.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = SystemColors.Window;
+            dataGridViewCellStyle8.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle8.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dataGridViewPurchase.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewPurchase.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewPurchase.Size = new Size(727, 510);
-            dataGridViewPurchase.TabIndex = 8;
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(dataGridViewProvider);
-            groupBox3.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox3.Location = new Point(9, 8);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(733, 543);
-            groupBox3.TabIndex = 9;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Поставщики";
-            // 
-            // dataGridViewProvider
-            // 
-            dataGridViewProvider.AllowUserToAddRows = false;
-            dataGridViewProvider.AllowUserToDeleteRows = false;
-            dataGridViewProvider.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewProvider.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewProvider.BackgroundColor = SystemColors.Control;
-            dataGridViewProvider.BorderStyle = BorderStyle.None;
-            dataGridViewProvider.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = SystemColors.Control;
-            dataGridViewCellStyle9.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewService.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewService.Location = new Point(3, 3);
+            dataGridViewService.MultiSelect = false;
+            dataGridViewService.Name = "dataGridViewService";
+            dataGridViewService.ReadOnly = true;
+            dataGridViewService.RowHeadersWidth = 51;
             dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            dataGridViewProvider.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewProvider.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = SystemColors.Window;
-            dataGridViewCellStyle10.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle10.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            dataGridViewProvider.DefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewProvider.Dock = DockStyle.Fill;
-            dataGridViewProvider.Location = new Point(3, 30);
-            dataGridViewProvider.MultiSelect = false;
-            dataGridViewProvider.Name = "dataGridViewProvider";
-            dataGridViewProvider.ReadOnly = true;
-            dataGridViewProvider.RowHeadersWidth = 51;
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
-            dataGridViewProvider.RowsDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewProvider.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewProvider.Size = new Size(727, 510);
-            dataGridViewProvider.TabIndex = 8;
+            dataGridViewService.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewService.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewService.Size = new Size(1537, 536);
+            dataGridViewService.TabIndex = 17;
             // 
             // tableLayoutPanel2
             // 
@@ -648,72 +543,88 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Controls.Add(butDeleteProvider, 0, 0);
-            tableLayoutPanel2.Controls.Add(butEditProvider, 0, 0);
-            tableLayoutPanel2.Controls.Add(butAddProvider, 0, 0);
-            tableLayoutPanel2.Location = new Point(9, 564);
+            tableLayoutPanel2.Controls.Add(button7, 0, 0);
+            tableLayoutPanel2.Controls.Add(button8, 0, 0);
+            tableLayoutPanel2.Controls.Add(button9, 0, 0);
+            tableLayoutPanel2.Location = new Point(271, 540);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(733, 55);
-            tableLayoutPanel2.TabIndex = 7;
+            tableLayoutPanel2.Size = new Size(995, 55);
+            tableLayoutPanel2.TabIndex = 16;
             // 
-            // butDeleteProvider
+            // button7
             // 
-            butDeleteProvider.BackColor = Color.FromArgb(210, 74, 74);
-            butDeleteProvider.Dock = DockStyle.Fill;
-            butDeleteProvider.FlatAppearance.BorderSize = 0;
-            butDeleteProvider.FlatStyle = FlatStyle.Flat;
-            butDeleteProvider.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butDeleteProvider.ForeColor = Color.FromArgb(239, 239, 239);
-            butDeleteProvider.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteProvider.Location = new Point(508, 3);
-            butDeleteProvider.Margin = new Padding(20, 3, 20, 3);
-            butDeleteProvider.Name = "butDeleteProvider";
-            butDeleteProvider.Padding = new Padding(10, 0, 0, 0);
-            butDeleteProvider.Size = new Size(205, 49);
-            butDeleteProvider.TabIndex = 3;
-            butDeleteProvider.Text = "Удалить";
-            butDeleteProvider.TextAlign = ContentAlignment.MiddleRight;
-            butDeleteProvider.UseVisualStyleBackColor = false;
+            button7.BackColor = Color.FromArgb(210, 74, 74);
+            button7.Dock = DockStyle.Fill;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button7.ForeColor = Color.FromArgb(239, 239, 239);
+            button7.Image = Properties.Resources.IconDelete;
+            button7.ImageAlign = ContentAlignment.MiddleLeft;
+            button7.Location = new Point(682, 3);
+            button7.Margin = new Padding(20, 3, 20, 3);
+            button7.Name = "button7";
+            button7.Padding = new Padding(10, 0, 0, 0);
+            button7.Size = new Size(293, 49);
+            button7.TabIndex = 3;
+            button7.Text = "Удалить";
+            button7.TextAlign = ContentAlignment.MiddleRight;
+            button7.UseVisualStyleBackColor = false;
             // 
-            // butEditProvider
+            // button8
             // 
-            butEditProvider.BackColor = Color.FromArgb(210, 74, 74);
-            butEditProvider.Dock = DockStyle.Fill;
-            butEditProvider.FlatAppearance.BorderSize = 0;
-            butEditProvider.FlatStyle = FlatStyle.Flat;
-            butEditProvider.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butEditProvider.ForeColor = Color.FromArgb(239, 239, 239);
-            butEditProvider.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditProvider.Location = new Point(264, 3);
-            butEditProvider.Margin = new Padding(20, 3, 20, 3);
-            butEditProvider.Name = "butEditProvider";
-            butEditProvider.Padding = new Padding(10, 0, 0, 0);
-            butEditProvider.Size = new Size(204, 49);
-            butEditProvider.TabIndex = 1;
-            butEditProvider.Text = "Изменить";
-            butEditProvider.TextAlign = ContentAlignment.MiddleRight;
-            butEditProvider.UseVisualStyleBackColor = false;
+            button8.BackColor = Color.FromArgb(210, 74, 74);
+            button8.Dock = DockStyle.Fill;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button8.ForeColor = Color.FromArgb(239, 239, 239);
+            button8.Image = Properties.Resources.IconEdit;
+            button8.ImageAlign = ContentAlignment.MiddleLeft;
+            button8.Location = new Point(351, 3);
+            button8.Margin = new Padding(20, 3, 20, 3);
+            button8.Name = "button8";
+            button8.Padding = new Padding(10, 0, 0, 0);
+            button8.Size = new Size(291, 49);
+            button8.TabIndex = 1;
+            button8.Text = "Изменить";
+            button8.TextAlign = ContentAlignment.MiddleRight;
+            button8.UseVisualStyleBackColor = false;
             // 
-            // butAddProvider
+            // button9
             // 
-            butAddProvider.BackColor = Color.FromArgb(210, 74, 74);
-            butAddProvider.Dock = DockStyle.Fill;
-            butAddProvider.FlatAppearance.BorderSize = 0;
-            butAddProvider.FlatStyle = FlatStyle.Flat;
-            butAddProvider.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butAddProvider.ForeColor = Color.FromArgb(239, 239, 239);
-            butAddProvider.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddProvider.Location = new Point(20, 3);
-            butAddProvider.Margin = new Padding(20, 3, 20, 3);
-            butAddProvider.Name = "butAddProvider";
-            butAddProvider.Padding = new Padding(10, 0, 0, 0);
-            butAddProvider.Size = new Size(204, 49);
-            butAddProvider.TabIndex = 0;
-            butAddProvider.Text = "Добавить";
-            butAddProvider.TextAlign = ContentAlignment.MiddleRight;
-            butAddProvider.UseVisualStyleBackColor = false;
+            button9.BackColor = Color.FromArgb(210, 74, 74);
+            button9.Dock = DockStyle.Fill;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button9.ForeColor = Color.FromArgb(239, 239, 239);
+            button9.Image = Properties.Resources.IconAdd;
+            button9.ImageAlign = ContentAlignment.MiddleLeft;
+            button9.Location = new Point(20, 3);
+            button9.Margin = new Padding(20, 3, 20, 3);
+            button9.Name = "button9";
+            button9.Padding = new Padding(10, 0, 0, 0);
+            button9.Size = new Size(291, 49);
+            button9.TabIndex = 0;
+            button9.Text = "Добавить";
+            button9.TextAlign = ContentAlignment.MiddleRight;
+            button9.UseVisualStyleBackColor = false;
+            // 
+            // tabPageOrder
+            // 
+            tabPageOrder.Controls.Add(tableLayoutPanel7);
+            tabPageOrder.Controls.Add(tableLayoutPanel4);
+            tabPageOrder.Controls.Add(groupBox5);
+            tabPageOrder.Controls.Add(groupBox6);
+            tabPageOrder.Location = new Point(4, 14);
+            tabPageOrder.Name = "tabPageOrder";
+            tabPageOrder.Size = new Size(1543, 603);
+            tabPageOrder.TabIndex = 2;
+            tabPageOrder.Text = " Заказы";
+            tabPageOrder.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
             // 
@@ -722,183 +633,75 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel7.Controls.Add(butDeletePurchase, 0, 0);
-            tableLayoutPanel7.Controls.Add(butEditPurchase, 0, 0);
-            tableLayoutPanel7.Controls.Add(butAddPurchase, 0, 0);
-            tableLayoutPanel7.Location = new Point(751, 564);
+            tableLayoutPanel7.Controls.Add(button15, 0, 0);
+            tableLayoutPanel7.Controls.Add(button16, 0, 0);
+            tableLayoutPanel7.Controls.Add(button17, 0, 0);
+            tableLayoutPanel7.Location = new Point(789, 545);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Size = new Size(734, 55);
-            tableLayoutPanel7.TabIndex = 7;
+            tableLayoutPanel7.Size = new Size(751, 55);
+            tableLayoutPanel7.TabIndex = 18;
             // 
-            // butDeletePurchase
+            // button15
             // 
-            butDeletePurchase.BackColor = Color.FromArgb(210, 74, 74);
-            butDeletePurchase.Dock = DockStyle.Fill;
-            butDeletePurchase.FlatAppearance.BorderSize = 0;
-            butDeletePurchase.FlatStyle = FlatStyle.Flat;
-            butDeletePurchase.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butDeletePurchase.ForeColor = Color.FromArgb(239, 239, 239);
-            butDeletePurchase.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeletePurchase.Location = new Point(508, 3);
-            butDeletePurchase.Margin = new Padding(20, 3, 20, 3);
-            butDeletePurchase.Name = "butDeletePurchase";
-            butDeletePurchase.Padding = new Padding(10, 0, 0, 0);
-            butDeletePurchase.Size = new Size(206, 49);
-            butDeletePurchase.TabIndex = 3;
-            butDeletePurchase.Text = "Удалить";
-            butDeletePurchase.TextAlign = ContentAlignment.MiddleRight;
-            butDeletePurchase.UseVisualStyleBackColor = false;
+            button15.BackColor = Color.FromArgb(210, 74, 74);
+            button15.Dock = DockStyle.Fill;
+            button15.FlatAppearance.BorderSize = 0;
+            button15.FlatStyle = FlatStyle.Flat;
+            button15.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button15.ForeColor = Color.FromArgb(239, 239, 239);
+            button15.Image = Properties.Resources.IconDelete;
+            button15.ImageAlign = ContentAlignment.MiddleLeft;
+            button15.Location = new Point(520, 3);
+            button15.Margin = new Padding(20, 3, 20, 3);
+            button15.Name = "button15";
+            button15.Padding = new Padding(10, 0, 0, 0);
+            button15.Size = new Size(211, 49);
+            button15.TabIndex = 3;
+            button15.Text = "Удалить";
+            button15.TextAlign = ContentAlignment.MiddleRight;
+            button15.UseVisualStyleBackColor = false;
             // 
-            // butEditPurchase
+            // button16
             // 
-            butEditPurchase.BackColor = Color.FromArgb(210, 74, 74);
-            butEditPurchase.Dock = DockStyle.Fill;
-            butEditPurchase.FlatAppearance.BorderSize = 0;
-            butEditPurchase.FlatStyle = FlatStyle.Flat;
-            butEditPurchase.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butEditPurchase.ForeColor = Color.FromArgb(239, 239, 239);
-            butEditPurchase.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditPurchase.Location = new Point(264, 3);
-            butEditPurchase.Margin = new Padding(20, 3, 20, 3);
-            butEditPurchase.Name = "butEditPurchase";
-            butEditPurchase.Padding = new Padding(10, 0, 0, 0);
-            butEditPurchase.Size = new Size(204, 49);
-            butEditPurchase.TabIndex = 1;
-            butEditPurchase.Text = "Изменить";
-            butEditPurchase.TextAlign = ContentAlignment.MiddleRight;
-            butEditPurchase.UseVisualStyleBackColor = false;
+            button16.BackColor = Color.FromArgb(210, 74, 74);
+            button16.Dock = DockStyle.Fill;
+            button16.FlatAppearance.BorderSize = 0;
+            button16.FlatStyle = FlatStyle.Flat;
+            button16.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button16.ForeColor = Color.FromArgb(239, 239, 239);
+            button16.Image = Properties.Resources.IconEdit;
+            button16.ImageAlign = ContentAlignment.MiddleLeft;
+            button16.Location = new Point(270, 3);
+            button16.Margin = new Padding(20, 3, 20, 3);
+            button16.Name = "button16";
+            button16.Padding = new Padding(10, 0, 0, 0);
+            button16.Size = new Size(210, 49);
+            button16.TabIndex = 1;
+            button16.Text = "Изменить";
+            button16.TextAlign = ContentAlignment.MiddleRight;
+            button16.UseVisualStyleBackColor = false;
             // 
-            // butAddPurchase
+            // button17
             // 
-            butAddPurchase.BackColor = Color.FromArgb(210, 74, 74);
-            butAddPurchase.Dock = DockStyle.Fill;
-            butAddPurchase.FlatAppearance.BorderSize = 0;
-            butAddPurchase.FlatStyle = FlatStyle.Flat;
-            butAddPurchase.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butAddPurchase.ForeColor = Color.FromArgb(239, 239, 239);
-            butAddPurchase.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddPurchase.Location = new Point(20, 3);
-            butAddPurchase.Margin = new Padding(20, 3, 20, 3);
-            butAddPurchase.Name = "butAddPurchase";
-            butAddPurchase.Padding = new Padding(10, 0, 0, 0);
-            butAddPurchase.Size = new Size(204, 49);
-            butAddPurchase.TabIndex = 0;
-            butAddPurchase.Text = "Добавить";
-            butAddPurchase.TextAlign = ContentAlignment.MiddleRight;
-            butAddPurchase.UseVisualStyleBackColor = false;
-            // 
-            // tabPageOrder
-            // 
-            tabPageOrder.Controls.Add(groupBox5);
-            tabPageOrder.Controls.Add(groupBox6);
-            tabPageOrder.Controls.Add(tableLayoutPanel4);
-            tabPageOrder.Controls.Add(tableLayoutPanel8);
-            tabPageOrder.Location = new Point(4, 14);
-            tabPageOrder.Name = "tabPageOrder";
-            tabPageOrder.Size = new Size(1494, 644);
-            tabPageOrder.TabIndex = 2;
-            tabPageOrder.Text = " ";
-            tabPageOrder.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(dataGridViewSale);
-            groupBox5.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox5.Location = new Point(748, 8);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(733, 543);
-            groupBox5.TabIndex = 12;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Продажи";
-            // 
-            // dataGridViewSale
-            // 
-            dataGridViewSale.AllowUserToAddRows = false;
-            dataGridViewSale.AllowUserToDeleteRows = false;
-            dataGridViewSale.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewSale.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewSale.BackgroundColor = SystemColors.Control;
-            dataGridViewSale.BorderStyle = BorderStyle.None;
-            dataGridViewSale.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = SystemColors.Control;
-            dataGridViewCellStyle12.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle12.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
-            dataGridViewSale.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            dataGridViewSale.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = SystemColors.Window;
-            dataGridViewCellStyle13.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle13.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
-            dataGridViewSale.DefaultCellStyle = dataGridViewCellStyle13;
-            dataGridViewSale.Dock = DockStyle.Fill;
-            dataGridViewSale.Location = new Point(3, 30);
-            dataGridViewSale.MultiSelect = false;
-            dataGridViewSale.Name = "dataGridViewSale";
-            dataGridViewSale.ReadOnly = true;
-            dataGridViewSale.RowHeadersWidth = 51;
-            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
-            dataGridViewSale.RowsDefaultCellStyle = dataGridViewCellStyle14;
-            dataGridViewSale.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewSale.Size = new Size(727, 510);
-            dataGridViewSale.TabIndex = 8;
-            // 
-            // groupBox6
-            // 
-            groupBox6.Controls.Add(dataGridViewClient);
-            groupBox6.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox6.Location = new Point(9, 8);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(733, 543);
-            groupBox6.TabIndex = 13;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Клиенты";
-            // 
-            // dataGridViewClient
-            // 
-            dataGridViewClient.AllowUserToAddRows = false;
-            dataGridViewClient.AllowUserToDeleteRows = false;
-            dataGridViewClient.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewClient.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewClient.BackgroundColor = SystemColors.Control;
-            dataGridViewClient.BorderStyle = BorderStyle.None;
-            dataGridViewClient.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = SystemColors.Control;
-            dataGridViewCellStyle15.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle15.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
-            dataGridViewClient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            dataGridViewClient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = SystemColors.Window;
-            dataGridViewCellStyle16.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle16.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle16.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = DataGridViewTriState.True;
-            dataGridViewClient.DefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewClient.Dock = DockStyle.Fill;
-            dataGridViewClient.Location = new Point(3, 30);
-            dataGridViewClient.MultiSelect = false;
-            dataGridViewClient.Name = "dataGridViewClient";
-            dataGridViewClient.ReadOnly = true;
-            dataGridViewClient.RowHeadersWidth = 51;
-            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.True;
-            dataGridViewClient.RowsDefaultCellStyle = dataGridViewCellStyle17;
-            dataGridViewClient.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewClient.Size = new Size(727, 510);
-            dataGridViewClient.TabIndex = 8;
+            button17.BackColor = Color.FromArgb(210, 74, 74);
+            button17.Dock = DockStyle.Fill;
+            button17.FlatAppearance.BorderSize = 0;
+            button17.FlatStyle = FlatStyle.Flat;
+            button17.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button17.ForeColor = Color.FromArgb(239, 239, 239);
+            button17.Image = Properties.Resources.IconAdd;
+            button17.ImageAlign = ContentAlignment.MiddleLeft;
+            button17.Location = new Point(20, 3);
+            button17.Margin = new Padding(20, 3, 20, 3);
+            button17.Name = "button17";
+            button17.Padding = new Padding(10, 0, 0, 0);
+            button17.Size = new Size(210, 49);
+            button17.TabIndex = 0;
+            button17.Text = "Добавить";
+            button17.TextAlign = ContentAlignment.MiddleRight;
+            button17.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel4
             // 
@@ -907,176 +710,304 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel4.Controls.Add(butDeleteClient, 0, 0);
-            tableLayoutPanel4.Controls.Add(butEditClient, 0, 0);
-            tableLayoutPanel4.Controls.Add(butAddClient, 0, 0);
-            tableLayoutPanel4.Location = new Point(9, 564);
+            tableLayoutPanel4.Controls.Add(butDeleteVisit, 0, 0);
+            tableLayoutPanel4.Controls.Add(butEditVisit, 0, 0);
+            tableLayoutPanel4.Controls.Add(butAddVisit, 0, 0);
+            tableLayoutPanel4.Location = new Point(12, 547);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new Size(733, 55);
-            tableLayoutPanel4.TabIndex = 10;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel4.Size = new Size(754, 55);
+            tableLayoutPanel4.TabIndex = 17;
             // 
-            // butDeleteClient
+            // butDeleteVisit
             // 
-            butDeleteClient.BackColor = Color.FromArgb(210, 74, 74);
-            butDeleteClient.Dock = DockStyle.Fill;
-            butDeleteClient.FlatAppearance.BorderSize = 0;
-            butDeleteClient.FlatStyle = FlatStyle.Flat;
-            butDeleteClient.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butDeleteClient.ForeColor = Color.FromArgb(239, 239, 239);
-            butDeleteClient.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteClient.Location = new Point(508, 3);
-            butDeleteClient.Margin = new Padding(20, 3, 20, 3);
-            butDeleteClient.Name = "butDeleteClient";
-            butDeleteClient.Padding = new Padding(10, 0, 0, 0);
-            butDeleteClient.Size = new Size(205, 49);
-            butDeleteClient.TabIndex = 3;
-            butDeleteClient.Text = "Удалить";
-            butDeleteClient.TextAlign = ContentAlignment.MiddleRight;
-            butDeleteClient.UseVisualStyleBackColor = false;
+            butDeleteVisit.BackColor = Color.FromArgb(210, 74, 74);
+            butDeleteVisit.Dock = DockStyle.Fill;
+            butDeleteVisit.FlatAppearance.BorderSize = 0;
+            butDeleteVisit.FlatStyle = FlatStyle.Flat;
+            butDeleteVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butDeleteVisit.ForeColor = Color.FromArgb(239, 239, 239);
+            butDeleteVisit.Image = Properties.Resources.IconDelete;
+            butDeleteVisit.ImageAlign = ContentAlignment.MiddleLeft;
+            butDeleteVisit.Location = new Point(522, 3);
+            butDeleteVisit.Margin = new Padding(20, 3, 20, 3);
+            butDeleteVisit.Name = "butDeleteVisit";
+            butDeleteVisit.Padding = new Padding(10, 0, 0, 0);
+            butDeleteVisit.Size = new Size(212, 49);
+            butDeleteVisit.TabIndex = 3;
+            butDeleteVisit.Text = "Удалить";
+            butDeleteVisit.TextAlign = ContentAlignment.MiddleRight;
+            butDeleteVisit.UseVisualStyleBackColor = false;
+            butDeleteVisit.Click += butDeleteVisit_Click;
             // 
-            // butEditClient
+            // butEditVisit
             // 
-            butEditClient.BackColor = Color.FromArgb(210, 74, 74);
-            butEditClient.Dock = DockStyle.Fill;
-            butEditClient.FlatAppearance.BorderSize = 0;
-            butEditClient.FlatStyle = FlatStyle.Flat;
-            butEditClient.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butEditClient.ForeColor = Color.FromArgb(239, 239, 239);
-            butEditClient.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditClient.Location = new Point(264, 3);
-            butEditClient.Margin = new Padding(20, 3, 20, 3);
-            butEditClient.Name = "butEditClient";
-            butEditClient.Padding = new Padding(10, 0, 0, 0);
-            butEditClient.Size = new Size(204, 49);
-            butEditClient.TabIndex = 1;
-            butEditClient.Text = "Изменить";
-            butEditClient.TextAlign = ContentAlignment.MiddleRight;
-            butEditClient.UseVisualStyleBackColor = false;
+            butEditVisit.BackColor = Color.FromArgb(210, 74, 74);
+            butEditVisit.Dock = DockStyle.Fill;
+            butEditVisit.FlatAppearance.BorderSize = 0;
+            butEditVisit.FlatStyle = FlatStyle.Flat;
+            butEditVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butEditVisit.ForeColor = Color.FromArgb(239, 239, 239);
+            butEditVisit.Image = Properties.Resources.IconEdit;
+            butEditVisit.ImageAlign = ContentAlignment.MiddleLeft;
+            butEditVisit.Location = new Point(271, 3);
+            butEditVisit.Margin = new Padding(20, 3, 20, 3);
+            butEditVisit.Name = "butEditVisit";
+            butEditVisit.Padding = new Padding(10, 0, 0, 0);
+            butEditVisit.Size = new Size(211, 49);
+            butEditVisit.TabIndex = 1;
+            butEditVisit.Text = "Изменить";
+            butEditVisit.TextAlign = ContentAlignment.MiddleRight;
+            butEditVisit.UseVisualStyleBackColor = false;
+            butEditVisit.Click += butEditVisit_Click;
             // 
-            // butAddClient
+            // butAddVisit
             // 
-            butAddClient.BackColor = Color.FromArgb(210, 74, 74);
-            butAddClient.Dock = DockStyle.Fill;
-            butAddClient.FlatAppearance.BorderSize = 0;
-            butAddClient.FlatStyle = FlatStyle.Flat;
-            butAddClient.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butAddClient.ForeColor = Color.FromArgb(239, 239, 239);
-            butAddClient.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddClient.Location = new Point(20, 3);
-            butAddClient.Margin = new Padding(20, 3, 20, 3);
-            butAddClient.Name = "butAddClient";
-            butAddClient.Padding = new Padding(10, 0, 0, 0);
-            butAddClient.Size = new Size(204, 49);
-            butAddClient.TabIndex = 0;
-            butAddClient.Text = "Добавить";
-            butAddClient.TextAlign = ContentAlignment.MiddleRight;
-            butAddClient.UseVisualStyleBackColor = false;
+            butAddVisit.BackColor = Color.FromArgb(210, 74, 74);
+            butAddVisit.Dock = DockStyle.Fill;
+            butAddVisit.FlatAppearance.BorderSize = 0;
+            butAddVisit.FlatStyle = FlatStyle.Flat;
+            butAddVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butAddVisit.ForeColor = Color.FromArgb(239, 239, 239);
+            butAddVisit.Image = Properties.Resources.IconAdd;
+            butAddVisit.ImageAlign = ContentAlignment.MiddleLeft;
+            butAddVisit.Location = new Point(20, 3);
+            butAddVisit.Margin = new Padding(20, 3, 20, 3);
+            butAddVisit.Name = "butAddVisit";
+            butAddVisit.Padding = new Padding(10, 0, 0, 0);
+            butAddVisit.Size = new Size(211, 49);
+            butAddVisit.TabIndex = 0;
+            butAddVisit.Text = "Добавить";
+            butAddVisit.TextAlign = ContentAlignment.MiddleRight;
+            butAddVisit.UseVisualStyleBackColor = false;
+            butAddVisit.Click += butAddVisit_Click;
             // 
-            // tableLayoutPanel8
+            // groupBox5
             // 
-            tableLayoutPanel8.ColumnCount = 3;
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel8.Controls.Add(butDeleteSale, 0, 0);
-            tableLayoutPanel8.Controls.Add(butEditSale, 0, 0);
-            tableLayoutPanel8.Controls.Add(butAddSale, 0, 0);
-            tableLayoutPanel8.Location = new Point(751, 564);
-            tableLayoutPanel8.Name = "tableLayoutPanel8";
-            tableLayoutPanel8.RowCount = 1;
-            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel8.Size = new Size(734, 55);
-            tableLayoutPanel8.TabIndex = 11;
+            groupBox5.Controls.Add(dataGridViewOrder);
+            groupBox5.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            groupBox5.Location = new Point(789, 8);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(751, 536);
+            groupBox5.TabIndex = 12;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Заказы";
             // 
-            // butDeleteSale
+            // dataGridViewOrder
             // 
-            butDeleteSale.BackColor = Color.FromArgb(210, 74, 74);
-            butDeleteSale.Dock = DockStyle.Fill;
-            butDeleteSale.FlatAppearance.BorderSize = 0;
-            butDeleteSale.FlatStyle = FlatStyle.Flat;
-            butDeleteSale.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butDeleteSale.ForeColor = Color.FromArgb(239, 239, 239);
-            butDeleteSale.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteSale.Location = new Point(508, 3);
-            butDeleteSale.Margin = new Padding(20, 3, 20, 3);
-            butDeleteSale.Name = "butDeleteSale";
-            butDeleteSale.Padding = new Padding(10, 0, 0, 0);
-            butDeleteSale.Size = new Size(206, 49);
-            butDeleteSale.TabIndex = 3;
-            butDeleteSale.Text = "Удалить";
-            butDeleteSale.TextAlign = ContentAlignment.MiddleRight;
-            butDeleteSale.UseVisualStyleBackColor = false;
+            dataGridViewOrder.AllowUserToAddRows = false;
+            dataGridViewOrder.AllowUserToDeleteRows = false;
+            dataGridViewOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewOrder.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridViewOrder.BackgroundColor = SystemColors.Control;
+            dataGridViewOrder.BorderStyle = BorderStyle.None;
+            dataGridViewOrder.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = SystemColors.Control;
+            dataGridViewCellStyle10.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            dataGridViewOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = SystemColors.Window;
+            dataGridViewCellStyle11.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle11.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            dataGridViewOrder.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewOrder.Dock = DockStyle.Fill;
+            dataGridViewOrder.Location = new Point(3, 30);
+            dataGridViewOrder.MultiSelect = false;
+            dataGridViewOrder.Name = "dataGridViewOrder";
+            dataGridViewOrder.ReadOnly = true;
+            dataGridViewOrder.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
+            dataGridViewOrder.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewOrder.Size = new Size(745, 503);
+            dataGridViewOrder.TabIndex = 18;
             // 
-            // butEditSale
+            // groupBox6
             // 
-            butEditSale.BackColor = Color.FromArgb(210, 74, 74);
-            butEditSale.Dock = DockStyle.Fill;
-            butEditSale.FlatAppearance.BorderSize = 0;
-            butEditSale.FlatStyle = FlatStyle.Flat;
-            butEditSale.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butEditSale.ForeColor = Color.FromArgb(239, 239, 239);
-            butEditSale.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditSale.Location = new Point(264, 3);
-            butEditSale.Margin = new Padding(20, 3, 20, 3);
-            butEditSale.Name = "butEditSale";
-            butEditSale.Padding = new Padding(10, 0, 0, 0);
-            butEditSale.Size = new Size(204, 49);
-            butEditSale.TabIndex = 1;
-            butEditSale.Text = "Изменить";
-            butEditSale.TextAlign = ContentAlignment.MiddleRight;
-            butEditSale.UseVisualStyleBackColor = false;
+            groupBox6.Controls.Add(dataGridViewVisit);
+            groupBox6.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            groupBox6.Location = new Point(9, 8);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(757, 536);
+            groupBox6.TabIndex = 13;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Посещения";
             // 
-            // butAddSale
+            // dataGridViewVisit
             // 
-            butAddSale.BackColor = Color.FromArgb(210, 74, 74);
-            butAddSale.Dock = DockStyle.Fill;
-            butAddSale.FlatAppearance.BorderSize = 0;
-            butAddSale.FlatStyle = FlatStyle.Flat;
-            butAddSale.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            butAddSale.ForeColor = Color.FromArgb(239, 239, 239);
-            butAddSale.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddSale.Location = new Point(20, 3);
-            butAddSale.Margin = new Padding(20, 3, 20, 3);
-            butAddSale.Name = "butAddSale";
-            butAddSale.Padding = new Padding(10, 0, 0, 0);
-            butAddSale.Size = new Size(204, 49);
-            butAddSale.TabIndex = 0;
-            butAddSale.Text = "Добавить";
-            butAddSale.TextAlign = ContentAlignment.MiddleRight;
-            butAddSale.UseVisualStyleBackColor = false;
+            dataGridViewVisit.AllowUserToAddRows = false;
+            dataGridViewVisit.AllowUserToDeleteRows = false;
+            dataGridViewVisit.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewVisit.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridViewVisit.BackgroundColor = SystemColors.Control;
+            dataGridViewVisit.BorderStyle = BorderStyle.None;
+            dataGridViewVisit.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = SystemColors.Control;
+            dataGridViewCellStyle13.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle13.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
+            dataGridViewVisit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewVisit.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = SystemColors.Window;
+            dataGridViewCellStyle14.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle14.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
+            dataGridViewVisit.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewVisit.Dock = DockStyle.Fill;
+            dataGridViewVisit.Location = new Point(3, 30);
+            dataGridViewVisit.MultiSelect = false;
+            dataGridViewVisit.Name = "dataGridViewVisit";
+            dataGridViewVisit.ReadOnly = true;
+            dataGridViewVisit.RowHeadersWidth = 51;
+            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
+            dataGridViewVisit.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewVisit.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewVisit.Size = new Size(751, 503);
+            dataGridViewVisit.TabIndex = 18;
+            dataGridViewVisit.SelectionChanged += dataGridViewVisit_SelectionChanged;
+            // 
+            // tabPageAdmin
+            // 
+            tabPageAdmin.Location = new Point(4, 14);
+            tabPageAdmin.Name = "tabPageAdmin";
+            tabPageAdmin.Size = new Size(1543, 603);
+            tabPageAdmin.TabIndex = 4;
+            tabPageAdmin.Text = "Админ";
+            tabPageAdmin.UseVisualStyleBackColor = true;
+            // 
+            // tabPageCopy
+            // 
+            tabPageCopy.Location = new Point(4, 14);
+            tabPageCopy.Name = "tabPageCopy";
+            tabPageCopy.Size = new Size(1543, 603);
+            tabPageCopy.TabIndex = 5;
+            tabPageCopy.Text = "Копирование";
+            tabPageCopy.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
             menuStrip1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { оПрограммеToolStripMenuItem, администрированиеToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { оПрограммеToolStripMenuItem, администрированиеToolStripMenuItem, резервноеКопированиеToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1358, 34);
+            menuStrip1.Size = new Size(1581, 34);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
             // оПрограммеToolStripMenuItem
             // 
+            оПрограммеToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { обАвтореToolStripMenuItem, справкаToolStripMenuItem });
             оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
             оПрограммеToolStripMenuItem.Size = new Size(156, 30);
             оПрограммеToolStripMenuItem.Text = "О программе";
+            // 
+            // обАвтореToolStripMenuItem
+            // 
+            обАвтореToolStripMenuItem.Name = "обАвтореToolStripMenuItem";
+            обАвтореToolStripMenuItem.Size = new Size(197, 30);
+            обАвтореToolStripMenuItem.Text = "Об авторе";
+            // 
+            // справкаToolStripMenuItem
+            // 
+            справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            справкаToolStripMenuItem.Size = new Size(197, 30);
+            справкаToolStripMenuItem.Text = "Справка";
             // 
             // администрированиеToolStripMenuItem
             // 
             администрированиеToolStripMenuItem.Name = "администрированиеToolStripMenuItem";
             администрированиеToolStripMenuItem.Size = new Size(228, 30);
+            администрированиеToolStripMenuItem.Tag = "4";
             администрированиеToolStripMenuItem.Text = "Администрирование";
+            администрированиеToolStripMenuItem.Click += butMenu_Click;
+            // 
+            // резервноеКопированиеToolStripMenuItem
+            // 
+            резервноеКопированиеToolStripMenuItem.Name = "резервноеКопированиеToolStripMenuItem";
+            резервноеКопированиеToolStripMenuItem.Size = new Size(256, 30);
+            резервноеКопированиеToolStripMenuItem.Tag = "5";
+            резервноеКопированиеToolStripMenuItem.Text = "Резервное копирование";
+            резервноеКопированиеToolStripMenuItem.Click += butMenu_Click;
+            // 
+            // tableLayoutPanel6
+            // 
+            tableLayoutPanel6.ColumnCount = 3;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.Controls.Add(button13, 0, 0);
+            tableLayoutPanel6.Location = new Point(0, 0);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 1;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.Size = new Size(200, 100);
+            tableLayoutPanel6.TabIndex = 0;
+            // 
+            // button13
+            // 
+            button13.BackColor = Color.FromArgb(210, 74, 74);
+            button13.Dock = DockStyle.Fill;
+            button13.FlatAppearance.BorderSize = 0;
+            button13.FlatStyle = FlatStyle.Flat;
+            button13.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button13.ForeColor = Color.FromArgb(239, 239, 239);
+            button13.Image = Properties.Resources.IconDelete;
+            button13.ImageAlign = ContentAlignment.MiddleLeft;
+            button13.Location = new Point(20, 3);
+            button13.Margin = new Padding(20, 3, 20, 3);
+            button13.Name = "button13";
+            button13.Padding = new Padding(10, 0, 0, 0);
+            button13.Size = new Size(26, 94);
+            button13.TabIndex = 3;
+            button13.Text = "Удалить";
+            button13.TextAlign = ContentAlignment.MiddleRight;
+            button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            button14.BackColor = Color.FromArgb(210, 74, 74);
+            button14.Dock = DockStyle.Fill;
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button14.ForeColor = Color.FromArgb(239, 239, 239);
+            button14.Image = Properties.Resources.IconEdit;
+            button14.ImageAlign = ContentAlignment.MiddleLeft;
+            button14.Location = new Point(20, 3);
+            button14.Margin = new Padding(20, 3, 20, 3);
+            button14.Name = "button14";
+            button14.Padding = new Padding(10, 0, 0, 0);
+            button14.Size = new Size(26, 94);
+            button14.TabIndex = 1;
+            button14.Text = "Изменить";
+            button14.TextAlign = ContentAlignment.MiddleRight;
+            button14.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
-            ClientSize = new Size(1358, 772);
+            ClientSize = new Size(1581, 772);
             Controls.Add(tabControlMain);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(menuStrip1);
@@ -1087,33 +1018,28 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Главное окно";
-            Load += MainForm_Load;
+            FormClosed += MainForm_FormClosed;
             tableLayoutPanel1.ResumeLayout(false);
             tabControlMain.ResumeLayout(false);
-            tabPageProduct.ResumeLayout(false);
+            tabPageComp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewComp).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewCar).EndInit();
-            tabPageEmployee.ResumeLayout(false);
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewEmployee).EndInit();
+            tabPageVisitor.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
-            tabPagePurchase.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPurchase).EndInit();
-            groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewProvider).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVisitors).EndInit();
+            tabPageService.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewService).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
-            tableLayoutPanel7.ResumeLayout(false);
             tabPageOrder.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSale).EndInit();
-            groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewClient).EndInit();
+            tableLayoutPanel7.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel8.ResumeLayout(false);
+            groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).EndInit();
+            groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVisit).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            tableLayoutPanel6.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1126,50 +1052,47 @@
         private Button button1;
         private Button butCar;
         private TabControl tabControlMain;
-        private TabPage tabPageProduct;
+        private TabPage tabPageComp;
         private TableLayoutPanel tableLayoutPanel5;
         private Button butDeleteCar;
         private Button butEditCar;
         private Button butAddCar;
-        private DataGridView dataGridViewCar;
-        private TabPage tabPageEmployee;
-        private GroupBox groupBox7;
-        private ComboBox comboBoxPost;
-        private CheckBox checkBoxPost;
-        private Button butPost;
-        private DataGridView dataGridViewEmployee;
-        private TableLayoutPanel tableLayoutPanel3;
-        private Button butDeleteEmployee;
-        private Button butEditEmployee;
-        private Button butAddEmployee;
-        private TabPage tabPagePurchase;
-        private GroupBox groupBox4;
-        private DataGridView dataGridViewPurchase;
-        private GroupBox groupBox3;
-        private DataGridView dataGridViewProvider;
-        private TableLayoutPanel tableLayoutPanel2;
-        private Button butDeleteProvider;
-        private Button butEditProvider;
-        private Button butAddProvider;
-        private TableLayoutPanel tableLayoutPanel7;
-        private Button butDeletePurchase;
-        private Button butEditPurchase;
-        private Button butAddPurchase;
+        private DataGridView dataGridViewComp;
+        private TabPage tabPageVisitor;
+        private DataGridView dataGridViewVisitors;
+        private TabPage tabPageService;
         private TabPage tabPageOrder;
         private GroupBox groupBox5;
-        private DataGridView dataGridViewSale;
         private GroupBox groupBox6;
-        private DataGridView dataGridViewClient;
-        private TableLayoutPanel tableLayoutPanel4;
-        private Button butDeleteClient;
-        private Button butEditClient;
-        private Button butAddClient;
-        private TableLayoutPanel tableLayoutPanel8;
-        private Button butDeleteSale;
-        private Button butEditSale;
-        private Button butAddSale;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem оПрограммеToolStripMenuItem;
         private ToolStripMenuItem администрированиеToolStripMenuItem;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
+        private ToolStripMenuItem обАвтореToolStripMenuItem;
+        private ToolStripMenuItem справкаToolStripMenuItem;
+        private ToolStripMenuItem резервноеКопированиеToolStripMenuItem;
+        private TabPage tabPageAdmin;
+        private TabPage tabPageCopy;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Button button7;
+        private Button button8;
+        private Button button9;
+        private DataGridView dataGridViewService;
+        private TableLayoutPanel tableLayoutPanel7;
+        private Button button15;
+        private Button button16;
+        private Button button17;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Button butDeleteVisit;
+        private Button butEditVisit;
+        private Button butAddVisit;
+        private DataGridView dataGridViewOrder;
+        private DataGridView dataGridViewVisit;
+        private TableLayoutPanel tableLayoutPanel6;
+        private Button button13;
+        private Button button14;
     }
 }
