@@ -183,6 +183,7 @@
             ClientSize = new Size(732, 404);
             Controls.Add(panel1);
             Name = "ContextComputers";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Добавление компьютера";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

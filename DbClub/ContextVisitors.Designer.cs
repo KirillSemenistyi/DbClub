@@ -34,16 +34,16 @@ namespace DbClub
             butCancel = new Button();
             butAddVisitor = new Button();
             panel1 = new Panel();
-            maskedTextBoxPhoneNumber = new MaskedTextBox();
-            textBoxEmail = new TextBox();
-            label3 = new Label();
-            label5 = new Label();
-            textBoxLastname = new TextBox();
-            label4 = new Label();
             textBoxSurname = new TextBox();
             label1 = new Label();
             textBoxName = new TextBox();
             label2 = new Label();
+            label5 = new Label();
+            maskedTextBoxPhoneNumber = new MaskedTextBox();
+            label4 = new Label();
+            textBoxLastname = new TextBox();
+            label3 = new Label();
+            textBoxEmail = new TextBox();
             tableLayoutPanel5.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -127,61 +127,6 @@ namespace DbClub
             panel1.Size = new Size(708, 393);
             panel1.TabIndex = 6;
             // 
-            // maskedTextBoxPhoneNumber
-            // 
-            maskedTextBoxPhoneNumber.Font = new Font("Times New Roman", 16.2F);
-            maskedTextBoxPhoneNumber.Location = new Point(454, 257);
-            maskedTextBoxPhoneNumber.Mask = "7 (999) 000-00-00";
-            maskedTextBoxPhoneNumber.Name = "maskedTextBoxPhoneNumber";
-            maskedTextBoxPhoneNumber.Size = new Size(248, 45);
-            maskedTextBoxPhoneNumber.TabIndex = 22;
-            // 
-            // textBoxEmail
-            // 
-            textBoxEmail.Font = new Font("Times New Roman", 16.2F);
-            textBoxEmail.Location = new Point(262, 198);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(440, 45);
-            textBoxEmail.TabIndex = 21;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 16.2F);
-            label3.Location = new Point(3, 201);
-            label3.Name = "label3";
-            label3.Size = new Size(98, 37);
-            label3.TabIndex = 20;
-            label3.Text = "email:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 16.2F);
-            label5.Location = new Point(0, 260);
-            label5.Name = "label5";
-            label5.Size = new Size(252, 37);
-            label5.TabIndex = 19;
-            label5.Text = "Номер телефона:";
-            // 
-            // textBoxLastname
-            // 
-            textBoxLastname.Font = new Font("Times New Roman", 16.2F);
-            textBoxLastname.Location = new Point(262, 138);
-            textBoxLastname.Name = "textBoxLastname";
-            textBoxLastname.Size = new Size(440, 45);
-            textBoxLastname.TabIndex = 18;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 16.2F);
-            label4.Location = new Point(3, 141);
-            label4.Name = "label4";
-            label4.Size = new Size(156, 37);
-            label4.TabIndex = 17;
-            label4.Text = "Отчество:";
-            // 
             // textBoxSurname
             // 
             textBoxSurname.Font = new Font("Times New Roman", 16.2F);
@@ -218,6 +163,61 @@ namespace DbClub
             label2.TabIndex = 1;
             label2.Text = "Имя:";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 16.2F);
+            label5.Location = new Point(0, 260);
+            label5.Name = "label5";
+            label5.Size = new Size(252, 37);
+            label5.TabIndex = 19;
+            label5.Text = "Номер телефона:";
+            // 
+            // maskedTextBoxPhoneNumber
+            // 
+            maskedTextBoxPhoneNumber.Font = new Font("Times New Roman", 16.2F);
+            maskedTextBoxPhoneNumber.Location = new Point(454, 257);
+            maskedTextBoxPhoneNumber.Mask = "7 (999) 000-00-00";
+            maskedTextBoxPhoneNumber.Name = "maskedTextBoxPhoneNumber";
+            maskedTextBoxPhoneNumber.Size = new Size(248, 45);
+            maskedTextBoxPhoneNumber.TabIndex = 22;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 16.2F);
+            label4.Location = new Point(3, 141);
+            label4.Name = "label4";
+            label4.Size = new Size(156, 37);
+            label4.TabIndex = 17;
+            label4.Text = "Отчество:";
+            // 
+            // textBoxLastname
+            // 
+            textBoxLastname.Font = new Font("Times New Roman", 16.2F);
+            textBoxLastname.Location = new Point(262, 138);
+            textBoxLastname.Name = "textBoxLastname";
+            textBoxLastname.Size = new Size(440, 45);
+            textBoxLastname.TabIndex = 18;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 16.2F);
+            label3.Location = new Point(3, 201);
+            label3.Name = "label3";
+            label3.Size = new Size(98, 37);
+            label3.TabIndex = 20;
+            label3.Text = "email:";
+            // 
+            // textBoxEmail
+            // 
+            textBoxEmail.Font = new Font("Times New Roman", 16.2F);
+            textBoxEmail.Location = new Point(262, 198);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(440, 45);
+            textBoxEmail.TabIndex = 21;
+            // 
             // ContextVisitors
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -226,6 +226,7 @@ namespace DbClub
             ClientSize = new Size(732, 417);
             Controls.Add(panel1);
             Name = "ContextVisitors";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Добавление посетителя";
             tableLayoutPanel5.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -239,15 +240,15 @@ namespace DbClub
         private Button butCancel;
         private Button butAddVisitor;
         private Panel panel1;
+        private Label label1;
+        public TextBox textBoxName;
+        private Label label2;
+        protected internal TextBox textBoxSurname;
+        public MaskedTextBox maskedTextBoxPhoneNumber;
+        public TextBox textBoxEmail;
         private Label label3;
         private Label label5;
         public TextBox textBoxLastname;
         private Label label4;
-        private Label label1;
-        public TextBox textBoxName;
-        private Label label2;
-        public TextBox textBoxEmail;
-        protected internal TextBox textBoxSurname;
-        public MaskedTextBox maskedTextBoxPhoneNumber;
     }
 }

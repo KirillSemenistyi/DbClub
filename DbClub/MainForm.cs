@@ -141,16 +141,6 @@ namespace DbClub
 
         private void butMenu_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((ToolStripMenuItem)sender).Tag.ToString());
 
-        private void button17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         #region Visitors
 
         private void addEditVisitors(bool flag)
@@ -159,6 +149,7 @@ namespace DbClub
             string[] param = new string[7];
             if (flag)
             {
+                contextVisitors.Text = "Изменение посетителя";
                 contextVisitors.textBoxSurname.Text = dataGridViewVisitors.SelectedRows[0].Cells[2].Value.ToString();
                 contextVisitors.textBoxName.Text = dataGridViewVisitors.SelectedRows[0].Cells[1].Value.ToString();
                 contextVisitors.textBoxLastname.Text = dataGridViewVisitors.SelectedRows[0].Cells[3].Value.ToString();
@@ -193,5 +184,46 @@ namespace DbClub
         }
 
         #endregion
+
+        #region Services
+
+        private void addEditServices(bool flag)
+        {
+            ContextServices contextServices = new ContextServices();
+            string[] param = new string[3];
+            if (flag)
+            {
+                contextServices.Text = "Изменение услуги";
+                contextServices.textBoxService.Text = dataGridViewService.SelectedRows[0].Cells[1].Value.ToString();
+                contextServices.textBoxPrice.Text = dataGridViewService.SelectedRows[0].Cells[2].Value.ToString();
+                param[2] = dataGridViewService.SelectedRows[0].Cells[0].Value.ToString();
+            }
+            if (contextServices.ShowDialog() == DialogResult.OK)
+            {
+                param[0] = contextServices.textBoxService.Text;
+                param[1] = contextServices.textBoxPrice.Text;
+                dbService.OperationOnRecord(flag ? "UPDATE services SET service_name = @service, price = @priceService WHERE id = @id" : "INSERT INTO `services`(`id`, `service_name`, `price`) VALUES (NULL,@service,@priceService)", param);
+                if (!flagWait) dbService.LoadDataGrid(cmdService, tableService, dataGridViewService, 1, ref flagWait);
+            }
+        }
+
+        private void buttonAddService_Click(object sender, EventArgs e) => addEditServices(false);
+        private void buttonEditService_Click(object sender, EventArgs e) => addEditServices(true);
+
+        private void buttonDeleteService_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите удалить данную запись?", "Удаление...", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                dbService.DeleteRecord(dataGridViewService.SelectedRows[0].Cells[0].Value.ToString(), "DELETE FROM services WHERE id = @id");
+                if (!flagWait) dbService.LoadDataGrid(cmdService, tableService, dataGridViewService, 1, ref flagWait);
+            }
+        }
+
+        #endregion
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

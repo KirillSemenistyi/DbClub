@@ -590,6 +590,7 @@
             button7.Text = "Удалить";
             button7.TextAlign = ContentAlignment.MiddleRight;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += buttonDeleteService_Click;
             // 
             // button8
             // 
@@ -610,6 +611,7 @@
             button8.Text = "Изменить";
             button8.TextAlign = ContentAlignment.MiddleRight;
             button8.UseVisualStyleBackColor = false;
+            button8.Click += buttonEditService_Click;
             // 
             // button9
             // 
@@ -630,7 +632,7 @@
             button9.Text = "Добавить";
             button9.TextAlign = ContentAlignment.MiddleRight;
             button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            button9.Click += buttonAddService_Click;
             // 
             // tabPageOrder
             // 
