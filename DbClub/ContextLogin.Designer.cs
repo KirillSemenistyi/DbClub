@@ -145,6 +145,7 @@
             Name = "ContextLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Авторизация";
+            FormClosed += ContextLogin_FormClosed;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
