@@ -106,8 +106,9 @@
             butEnter.Name = "butEnter";
             butEnter.Size = new Size(241, 57);
             butEnter.TabIndex = 2;
-            butEnter.Text = "Вход";
+            butEnter.Text = "Войти";
             butEnter.UseVisualStyleBackColor = false;
+            butEnter.Click += butEnter_Click;
             // 
             // butEye
             // 
