@@ -20,6 +20,10 @@ namespace DbClub
             InitializeComponent();
             MainForm.db = new Database(new MySqlConnection("Server=127.0.0.1;Port=3306;User ID=root; Database=dbclub;Allow Zero DateTime=True"));
             MainForm.dbService = new DatabaseService(MainForm.db);
+#if DEBUG
+            textBoxLog.Text = "admin";
+            textBoxPass.Text = "admin";
+#endif
         }
 
 

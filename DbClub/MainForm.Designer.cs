@@ -124,11 +124,12 @@
             tableLayoutPanel1.Controls.Add(button2, 0, 0);
             tableLayoutPanel1.Controls.Add(button1, 0, 0);
             tableLayoutPanel1.Controls.Add(butCar, 0, 0);
-            tableLayoutPanel1.Location = new Point(271, 44);
+            tableLayoutPanel1.Location = new Point(339, 55);
+            tableLayoutPanel1.Margin = new Padding(4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1068, 85);
+            tableLayoutPanel1.Size = new Size(1335, 106);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // button3
@@ -137,14 +138,15 @@
             button3.Dock = DockStyle.Fill;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button3.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button3.ForeColor = Color.FromArgb(239, 239, 239);
             button3.Image = Properties.Resources.IconSale;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(537, 3);
+            button3.Location = new Point(670, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
-            button3.Padding = new Padding(10, 0, 0, 0);
-            button3.Size = new Size(261, 79);
+            button3.Padding = new Padding(12, 0, 0, 0);
+            button3.Size = new Size(325, 98);
             button3.TabIndex = 3;
             button3.Tag = "2";
             button3.Text = "Услуги";
@@ -158,14 +160,15 @@
             button2.Dock = DockStyle.Fill;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button2.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button2.ForeColor = Color.FromArgb(239, 239, 239);
             button2.Image = Properties.Resources.IconOrder;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(804, 3);
+            button2.Location = new Point(1003, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Padding = new Padding(10, 0, 0, 0);
-            button2.Size = new Size(261, 79);
+            button2.Padding = new Padding(12, 0, 0, 0);
+            button2.Size = new Size(328, 98);
             button2.TabIndex = 2;
             button2.Tag = "3";
             button2.Text = "Заказы";
@@ -179,14 +182,15 @@
             button1.Dock = DockStyle.Fill;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button1.ForeColor = Color.FromArgb(239, 239, 239);
             button1.Image = Properties.Resources.IconComp1;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Padding = new Padding(10, 0, 0, 0);
-            button1.Size = new Size(261, 79);
+            button1.Padding = new Padding(12, 0, 0, 0);
+            button1.Size = new Size(325, 98);
             button1.TabIndex = 1;
             button1.Tag = "0";
             button1.Text = "Компьютеры";
@@ -200,14 +204,15 @@
             butCar.Dock = DockStyle.Fill;
             butCar.FlatAppearance.BorderSize = 0;
             butCar.FlatStyle = FlatStyle.Flat;
-            butCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butCar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butCar.ForeColor = Color.FromArgb(239, 239, 239);
             butCar.Image = Properties.Resources.IconEmployee;
             butCar.ImageAlign = ContentAlignment.MiddleLeft;
-            butCar.Location = new Point(270, 3);
+            butCar.Location = new Point(337, 4);
+            butCar.Margin = new Padding(4);
             butCar.Name = "butCar";
-            butCar.Padding = new Padding(10, 0, 0, 0);
-            butCar.Size = new Size(261, 79);
+            butCar.Padding = new Padding(12, 0, 0, 0);
+            butCar.Size = new Size(325, 98);
             butCar.TabIndex = 0;
             butCar.Tag = "1";
             butCar.Text = "Клиенты";
@@ -225,12 +230,12 @@
             tabControlMain.Controls.Add(tabPageOrder);
             tabControlMain.Controls.Add(tabPageAdmin);
             tabControlMain.Controls.Add(tabPageCopy);
-            tabControlMain.ItemSize = new Size(100, 10);
-            tabControlMain.Location = new Point(15, 137);
-            tabControlMain.Margin = new Padding(6, 5, 6, 5);
+            tabControlMain.ItemSize = new Size(100, 30);
+            tabControlMain.Location = new Point(19, 167);
+            tabControlMain.Margin = new Padding(8, 6, 8, 6);
             tabControlMain.Name = "tabControlMain";
             tabControlMain.SelectedIndex = 0;
-            tabControlMain.Size = new Size(1551, 621);
+            tabControlMain.Size = new Size(1939, 780);
             tabControlMain.SizeMode = TabSizeMode.Fixed;
             tabControlMain.TabIndex = 3;
             // 
@@ -238,11 +243,11 @@
             // 
             tabPageComp.Controls.Add(dataGridViewComp);
             tabPageComp.Controls.Add(tableLayoutPanel5);
-            tabPageComp.Location = new Point(4, 14);
-            tabPageComp.Margin = new Padding(6, 5, 6, 5);
+            tabPageComp.Location = new Point(4, 34);
+            tabPageComp.Margin = new Padding(8, 6, 8, 6);
             tabPageComp.Name = "tabPageComp";
-            tabPageComp.Padding = new Padding(6, 5, 6, 5);
-            tabPageComp.Size = new Size(1543, 603);
+            tabPageComp.Padding = new Padding(8, 6, 8, 6);
+            tabPageComp.Size = new Size(1931, 742);
             tabPageComp.TabIndex = 0;
             tabPageComp.Text = "Компьютеры";
             tabPageComp.UseVisualStyleBackColor = true;
@@ -273,7 +278,8 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridViewComp.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewComp.Location = new Point(3, 3);
+            dataGridViewComp.Location = new Point(4, 4);
+            dataGridViewComp.Margin = new Padding(4);
             dataGridViewComp.MultiSelect = false;
             dataGridViewComp.Name = "dataGridViewComp";
             dataGridViewComp.ReadOnly = true;
@@ -281,7 +287,7 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dataGridViewComp.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewComp.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewComp.Size = new Size(1531, 526);
+            dataGridViewComp.Size = new Size(1914, 658);
             dataGridViewComp.TabIndex = 5;
             // 
             // tableLayoutPanel5
@@ -290,15 +296,16 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel5.Controls.Add(butDeleteCar, 0, 0);
             tableLayoutPanel5.Controls.Add(butEditCar, 0, 0);
             tableLayoutPanel5.Controls.Add(butAddCar, 0, 0);
-            tableLayoutPanel5.Location = new Point(271, 540);
+            tableLayoutPanel5.Location = new Point(339, 675);
+            tableLayoutPanel5.Margin = new Padding(4);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Size = new Size(995, 55);
+            tableLayoutPanel5.Size = new Size(1244, 69);
             tableLayoutPanel5.TabIndex = 14;
             // 
             // butDeleteCar
@@ -307,15 +314,15 @@
             butDeleteCar.Dock = DockStyle.Fill;
             butDeleteCar.FlatAppearance.BorderSize = 0;
             butDeleteCar.FlatStyle = FlatStyle.Flat;
-            butDeleteCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butDeleteCar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butDeleteCar.ForeColor = Color.FromArgb(239, 239, 239);
             butDeleteCar.Image = Properties.Resources.IconDelete;
             butDeleteCar.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteCar.Location = new Point(682, 3);
-            butDeleteCar.Margin = new Padding(20, 3, 20, 3);
+            butDeleteCar.Location = new Point(853, 4);
+            butDeleteCar.Margin = new Padding(25, 4, 25, 4);
             butDeleteCar.Name = "butDeleteCar";
-            butDeleteCar.Padding = new Padding(10, 0, 0, 0);
-            butDeleteCar.Size = new Size(293, 49);
+            butDeleteCar.Padding = new Padding(12, 0, 0, 0);
+            butDeleteCar.Size = new Size(366, 61);
             butDeleteCar.TabIndex = 3;
             butDeleteCar.Text = "Удалить";
             butDeleteCar.TextAlign = ContentAlignment.MiddleRight;
@@ -327,19 +334,20 @@
             butEditCar.Dock = DockStyle.Fill;
             butEditCar.FlatAppearance.BorderSize = 0;
             butEditCar.FlatStyle = FlatStyle.Flat;
-            butEditCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butEditCar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butEditCar.ForeColor = Color.FromArgb(239, 239, 239);
             butEditCar.Image = Properties.Resources.IconEdit;
             butEditCar.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditCar.Location = new Point(351, 3);
-            butEditCar.Margin = new Padding(20, 3, 20, 3);
+            butEditCar.Location = new Point(439, 4);
+            butEditCar.Margin = new Padding(25, 4, 25, 4);
             butEditCar.Name = "butEditCar";
-            butEditCar.Padding = new Padding(10, 0, 0, 0);
-            butEditCar.Size = new Size(291, 49);
+            butEditCar.Padding = new Padding(12, 0, 0, 0);
+            butEditCar.Size = new Size(364, 61);
             butEditCar.TabIndex = 1;
             butEditCar.Text = "Изменить";
             butEditCar.TextAlign = ContentAlignment.MiddleRight;
             butEditCar.UseVisualStyleBackColor = false;
+            butEditCar.Click += butEditCar_Click;
             // 
             // butAddCar
             // 
@@ -347,27 +355,29 @@
             butAddCar.Dock = DockStyle.Fill;
             butAddCar.FlatAppearance.BorderSize = 0;
             butAddCar.FlatStyle = FlatStyle.Flat;
-            butAddCar.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butAddCar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butAddCar.ForeColor = Color.FromArgb(239, 239, 239);
             butAddCar.Image = Properties.Resources.IconAdd;
             butAddCar.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddCar.Location = new Point(20, 3);
-            butAddCar.Margin = new Padding(20, 3, 20, 3);
+            butAddCar.Location = new Point(25, 4);
+            butAddCar.Margin = new Padding(25, 4, 25, 4);
             butAddCar.Name = "butAddCar";
-            butAddCar.Padding = new Padding(10, 0, 0, 0);
-            butAddCar.Size = new Size(291, 49);
+            butAddCar.Padding = new Padding(12, 0, 0, 0);
+            butAddCar.Size = new Size(364, 61);
             butAddCar.TabIndex = 0;
             butAddCar.Text = "Добавить";
             butAddCar.TextAlign = ContentAlignment.MiddleRight;
             butAddCar.UseVisualStyleBackColor = false;
+            butAddCar.Click += butAddCar_Click;
             // 
             // tabPageVisitor
             // 
             tabPageVisitor.Controls.Add(tableLayoutPanel3);
             tabPageVisitor.Controls.Add(dataGridViewVisitors);
-            tabPageVisitor.Location = new Point(4, 14);
+            tabPageVisitor.Location = new Point(4, 34);
+            tabPageVisitor.Margin = new Padding(4);
             tabPageVisitor.Name = "tabPageVisitor";
-            tabPageVisitor.Size = new Size(1543, 603);
+            tabPageVisitor.Size = new Size(1931, 742);
             tabPageVisitor.TabIndex = 3;
             tabPageVisitor.Text = "Клиенты";
             tabPageVisitor.UseVisualStyleBackColor = true;
@@ -378,15 +388,16 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel3.Controls.Add(button4, 0, 0);
             tableLayoutPanel3.Controls.Add(button5, 0, 0);
             tableLayoutPanel3.Controls.Add(button6, 0, 0);
-            tableLayoutPanel3.Location = new Point(271, 540);
+            tableLayoutPanel3.Location = new Point(339, 675);
+            tableLayoutPanel3.Margin = new Padding(4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(995, 55);
+            tableLayoutPanel3.Size = new Size(1244, 69);
             tableLayoutPanel3.TabIndex = 15;
             // 
             // button4
@@ -395,15 +406,15 @@
             button4.Dock = DockStyle.Fill;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button4.ForeColor = Color.FromArgb(239, 239, 239);
             button4.Image = Properties.Resources.IconDelete;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(682, 3);
-            button4.Margin = new Padding(20, 3, 20, 3);
+            button4.Location = new Point(853, 4);
+            button4.Margin = new Padding(25, 4, 25, 4);
             button4.Name = "button4";
-            button4.Padding = new Padding(10, 0, 0, 0);
-            button4.Size = new Size(293, 49);
+            button4.Padding = new Padding(12, 0, 0, 0);
+            button4.Size = new Size(366, 61);
             button4.TabIndex = 3;
             button4.Text = "Удалить";
             button4.TextAlign = ContentAlignment.MiddleRight;
@@ -415,15 +426,15 @@
             button5.Dock = DockStyle.Fill;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button5.ForeColor = Color.FromArgb(239, 239, 239);
             button5.Image = Properties.Resources.IconEdit;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(351, 3);
-            button5.Margin = new Padding(20, 3, 20, 3);
+            button5.Location = new Point(439, 4);
+            button5.Margin = new Padding(25, 4, 25, 4);
             button5.Name = "button5";
-            button5.Padding = new Padding(10, 0, 0, 0);
-            button5.Size = new Size(291, 49);
+            button5.Padding = new Padding(12, 0, 0, 0);
+            button5.Size = new Size(364, 61);
             button5.TabIndex = 1;
             button5.Text = "Изменить";
             button5.TextAlign = ContentAlignment.MiddleRight;
@@ -435,15 +446,15 @@
             button6.Dock = DockStyle.Fill;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button6.ForeColor = Color.FromArgb(239, 239, 239);
             button6.Image = Properties.Resources.IconAdd;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(20, 3);
-            button6.Margin = new Padding(20, 3, 20, 3);
+            button6.Location = new Point(25, 4);
+            button6.Margin = new Padding(25, 4, 25, 4);
             button6.Name = "button6";
-            button6.Padding = new Padding(10, 0, 0, 0);
-            button6.Size = new Size(291, 49);
+            button6.Padding = new Padding(12, 0, 0, 0);
+            button6.Size = new Size(364, 61);
             button6.TabIndex = 0;
             button6.Text = "Добавить";
             button6.TextAlign = ContentAlignment.MiddleRight;
@@ -475,7 +486,8 @@
             dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
             dataGridViewVisitors.DefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewVisitors.Location = new Point(3, 3);
+            dataGridViewVisitors.Location = new Point(4, 4);
+            dataGridViewVisitors.Margin = new Padding(4);
             dataGridViewVisitors.MultiSelect = false;
             dataGridViewVisitors.Name = "dataGridViewVisitors";
             dataGridViewVisitors.ReadOnly = true;
@@ -483,18 +495,18 @@
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
             dataGridViewVisitors.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dataGridViewVisitors.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewVisitors.Size = new Size(1537, 536);
+            dataGridViewVisitors.Size = new Size(1921, 670);
             dataGridViewVisitors.TabIndex = 6;
             // 
             // tabPageService
             // 
             tabPageService.Controls.Add(dataGridViewService);
             tabPageService.Controls.Add(tableLayoutPanel2);
-            tabPageService.Location = new Point(4, 14);
-            tabPageService.Margin = new Padding(6, 5, 6, 5);
+            tabPageService.Location = new Point(4, 34);
+            tabPageService.Margin = new Padding(8, 6, 8, 6);
             tabPageService.Name = "tabPageService";
-            tabPageService.Padding = new Padding(6, 5, 6, 5);
-            tabPageService.Size = new Size(1543, 603);
+            tabPageService.Padding = new Padding(8, 6, 8, 6);
+            tabPageService.Size = new Size(1931, 742);
             tabPageService.TabIndex = 1;
             tabPageService.Text = "Услуги";
             tabPageService.UseVisualStyleBackColor = true;
@@ -525,7 +537,8 @@
             dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
             dataGridViewService.DefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewService.Location = new Point(3, 3);
+            dataGridViewService.Location = new Point(4, 4);
+            dataGridViewService.Margin = new Padding(4);
             dataGridViewService.MultiSelect = false;
             dataGridViewService.Name = "dataGridViewService";
             dataGridViewService.ReadOnly = true;
@@ -533,7 +546,7 @@
             dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
             dataGridViewService.RowsDefaultCellStyle = dataGridViewCellStyle9;
             dataGridViewService.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewService.Size = new Size(1537, 536);
+            dataGridViewService.Size = new Size(1921, 670);
             dataGridViewService.TabIndex = 17;
             // 
             // tableLayoutPanel2
@@ -542,15 +555,16 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel2.Controls.Add(button7, 0, 0);
             tableLayoutPanel2.Controls.Add(button8, 0, 0);
             tableLayoutPanel2.Controls.Add(button9, 0, 0);
-            tableLayoutPanel2.Location = new Point(271, 540);
+            tableLayoutPanel2.Location = new Point(339, 675);
+            tableLayoutPanel2.Margin = new Padding(4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(995, 55);
+            tableLayoutPanel2.Size = new Size(1244, 69);
             tableLayoutPanel2.TabIndex = 16;
             // 
             // button7
@@ -559,15 +573,15 @@
             button7.Dock = DockStyle.Fill;
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button7.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button7.ForeColor = Color.FromArgb(239, 239, 239);
             button7.Image = Properties.Resources.IconDelete;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(682, 3);
-            button7.Margin = new Padding(20, 3, 20, 3);
+            button7.Location = new Point(853, 4);
+            button7.Margin = new Padding(25, 4, 25, 4);
             button7.Name = "button7";
-            button7.Padding = new Padding(10, 0, 0, 0);
-            button7.Size = new Size(293, 49);
+            button7.Padding = new Padding(12, 0, 0, 0);
+            button7.Size = new Size(366, 61);
             button7.TabIndex = 3;
             button7.Text = "Удалить";
             button7.TextAlign = ContentAlignment.MiddleRight;
@@ -579,15 +593,15 @@
             button8.Dock = DockStyle.Fill;
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button8.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button8.ForeColor = Color.FromArgb(239, 239, 239);
             button8.Image = Properties.Resources.IconEdit;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(351, 3);
-            button8.Margin = new Padding(20, 3, 20, 3);
+            button8.Location = new Point(439, 4);
+            button8.Margin = new Padding(25, 4, 25, 4);
             button8.Name = "button8";
-            button8.Padding = new Padding(10, 0, 0, 0);
-            button8.Size = new Size(291, 49);
+            button8.Padding = new Padding(12, 0, 0, 0);
+            button8.Size = new Size(364, 61);
             button8.TabIndex = 1;
             button8.Text = "Изменить";
             button8.TextAlign = ContentAlignment.MiddleRight;
@@ -599,19 +613,20 @@
             button9.Dock = DockStyle.Fill;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button9.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button9.ForeColor = Color.FromArgb(239, 239, 239);
             button9.Image = Properties.Resources.IconAdd;
             button9.ImageAlign = ContentAlignment.MiddleLeft;
-            button9.Location = new Point(20, 3);
-            button9.Margin = new Padding(20, 3, 20, 3);
+            button9.Location = new Point(25, 4);
+            button9.Margin = new Padding(25, 4, 25, 4);
             button9.Name = "button9";
-            button9.Padding = new Padding(10, 0, 0, 0);
-            button9.Size = new Size(291, 49);
+            button9.Padding = new Padding(12, 0, 0, 0);
+            button9.Size = new Size(364, 61);
             button9.TabIndex = 0;
             button9.Text = "Добавить";
             button9.TextAlign = ContentAlignment.MiddleRight;
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // tabPageOrder
             // 
@@ -619,9 +634,10 @@
             tabPageOrder.Controls.Add(tableLayoutPanel4);
             tabPageOrder.Controls.Add(groupBox5);
             tabPageOrder.Controls.Add(groupBox6);
-            tabPageOrder.Location = new Point(4, 14);
+            tabPageOrder.Location = new Point(4, 34);
+            tabPageOrder.Margin = new Padding(4);
             tabPageOrder.Name = "tabPageOrder";
-            tabPageOrder.Size = new Size(1543, 603);
+            tabPageOrder.Size = new Size(1931, 742);
             tabPageOrder.TabIndex = 2;
             tabPageOrder.Text = " Заказы";
             tabPageOrder.UseVisualStyleBackColor = true;
@@ -632,15 +648,16 @@
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel7.Controls.Add(button15, 0, 0);
             tableLayoutPanel7.Controls.Add(button16, 0, 0);
             tableLayoutPanel7.Controls.Add(button17, 0, 0);
-            tableLayoutPanel7.Location = new Point(789, 545);
+            tableLayoutPanel7.Location = new Point(986, 681);
+            tableLayoutPanel7.Margin = new Padding(4);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Size = new Size(751, 55);
+            tableLayoutPanel7.Size = new Size(939, 69);
             tableLayoutPanel7.TabIndex = 18;
             // 
             // button15
@@ -649,15 +666,15 @@
             button15.Dock = DockStyle.Fill;
             button15.FlatAppearance.BorderSize = 0;
             button15.FlatStyle = FlatStyle.Flat;
-            button15.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button15.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button15.ForeColor = Color.FromArgb(239, 239, 239);
             button15.Image = Properties.Resources.IconDelete;
             button15.ImageAlign = ContentAlignment.MiddleLeft;
-            button15.Location = new Point(520, 3);
-            button15.Margin = new Padding(20, 3, 20, 3);
+            button15.Location = new Point(649, 4);
+            button15.Margin = new Padding(25, 4, 25, 4);
             button15.Name = "button15";
-            button15.Padding = new Padding(10, 0, 0, 0);
-            button15.Size = new Size(211, 49);
+            button15.Padding = new Padding(12, 0, 0, 0);
+            button15.Size = new Size(265, 61);
             button15.TabIndex = 3;
             button15.Text = "Удалить";
             button15.TextAlign = ContentAlignment.MiddleRight;
@@ -669,15 +686,15 @@
             button16.Dock = DockStyle.Fill;
             button16.FlatAppearance.BorderSize = 0;
             button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button16.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button16.ForeColor = Color.FromArgb(239, 239, 239);
             button16.Image = Properties.Resources.IconEdit;
             button16.ImageAlign = ContentAlignment.MiddleLeft;
-            button16.Location = new Point(270, 3);
-            button16.Margin = new Padding(20, 3, 20, 3);
+            button16.Location = new Point(337, 4);
+            button16.Margin = new Padding(25, 4, 25, 4);
             button16.Name = "button16";
-            button16.Padding = new Padding(10, 0, 0, 0);
-            button16.Size = new Size(210, 49);
+            button16.Padding = new Padding(12, 0, 0, 0);
+            button16.Size = new Size(262, 61);
             button16.TabIndex = 1;
             button16.Text = "Изменить";
             button16.TextAlign = ContentAlignment.MiddleRight;
@@ -689,19 +706,20 @@
             button17.Dock = DockStyle.Fill;
             button17.FlatAppearance.BorderSize = 0;
             button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button17.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button17.ForeColor = Color.FromArgb(239, 239, 239);
             button17.Image = Properties.Resources.IconAdd;
             button17.ImageAlign = ContentAlignment.MiddleLeft;
-            button17.Location = new Point(20, 3);
-            button17.Margin = new Padding(20, 3, 20, 3);
+            button17.Location = new Point(25, 4);
+            button17.Margin = new Padding(25, 4, 25, 4);
             button17.Name = "button17";
-            button17.Padding = new Padding(10, 0, 0, 0);
-            button17.Size = new Size(210, 49);
+            button17.Padding = new Padding(12, 0, 0, 0);
+            button17.Size = new Size(262, 61);
             button17.TabIndex = 0;
             button17.Text = "Добавить";
             button17.TextAlign = ContentAlignment.MiddleRight;
             button17.UseVisualStyleBackColor = false;
+            button17.Click += button17_Click;
             // 
             // tableLayoutPanel4
             // 
@@ -709,16 +727,17 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel4.Controls.Add(butDeleteVisit, 0, 0);
             tableLayoutPanel4.Controls.Add(butEditVisit, 0, 0);
             tableLayoutPanel4.Controls.Add(butAddVisit, 0, 0);
-            tableLayoutPanel4.Location = new Point(12, 547);
+            tableLayoutPanel4.Location = new Point(15, 684);
+            tableLayoutPanel4.Margin = new Padding(4);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel4.Size = new Size(754, 55);
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 69F));
+            tableLayoutPanel4.Size = new Size(942, 69);
             tableLayoutPanel4.TabIndex = 17;
             // 
             // butDeleteVisit
@@ -727,15 +746,15 @@
             butDeleteVisit.Dock = DockStyle.Fill;
             butDeleteVisit.FlatAppearance.BorderSize = 0;
             butDeleteVisit.FlatStyle = FlatStyle.Flat;
-            butDeleteVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butDeleteVisit.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butDeleteVisit.ForeColor = Color.FromArgb(239, 239, 239);
             butDeleteVisit.Image = Properties.Resources.IconDelete;
             butDeleteVisit.ImageAlign = ContentAlignment.MiddleLeft;
-            butDeleteVisit.Location = new Point(522, 3);
-            butDeleteVisit.Margin = new Padding(20, 3, 20, 3);
+            butDeleteVisit.Location = new Point(651, 4);
+            butDeleteVisit.Margin = new Padding(25, 4, 25, 4);
             butDeleteVisit.Name = "butDeleteVisit";
-            butDeleteVisit.Padding = new Padding(10, 0, 0, 0);
-            butDeleteVisit.Size = new Size(212, 49);
+            butDeleteVisit.Padding = new Padding(12, 0, 0, 0);
+            butDeleteVisit.Size = new Size(266, 61);
             butDeleteVisit.TabIndex = 3;
             butDeleteVisit.Text = "Удалить";
             butDeleteVisit.TextAlign = ContentAlignment.MiddleRight;
@@ -748,15 +767,15 @@
             butEditVisit.Dock = DockStyle.Fill;
             butEditVisit.FlatAppearance.BorderSize = 0;
             butEditVisit.FlatStyle = FlatStyle.Flat;
-            butEditVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butEditVisit.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butEditVisit.ForeColor = Color.FromArgb(239, 239, 239);
             butEditVisit.Image = Properties.Resources.IconEdit;
             butEditVisit.ImageAlign = ContentAlignment.MiddleLeft;
-            butEditVisit.Location = new Point(271, 3);
-            butEditVisit.Margin = new Padding(20, 3, 20, 3);
+            butEditVisit.Location = new Point(338, 4);
+            butEditVisit.Margin = new Padding(25, 4, 25, 4);
             butEditVisit.Name = "butEditVisit";
-            butEditVisit.Padding = new Padding(10, 0, 0, 0);
-            butEditVisit.Size = new Size(211, 49);
+            butEditVisit.Padding = new Padding(12, 0, 0, 0);
+            butEditVisit.Size = new Size(263, 61);
             butEditVisit.TabIndex = 1;
             butEditVisit.Text = "Изменить";
             butEditVisit.TextAlign = ContentAlignment.MiddleRight;
@@ -769,15 +788,15 @@
             butAddVisit.Dock = DockStyle.Fill;
             butAddVisit.FlatAppearance.BorderSize = 0;
             butAddVisit.FlatStyle = FlatStyle.Flat;
-            butAddVisit.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            butAddVisit.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             butAddVisit.ForeColor = Color.FromArgb(239, 239, 239);
             butAddVisit.Image = Properties.Resources.IconAdd;
             butAddVisit.ImageAlign = ContentAlignment.MiddleLeft;
-            butAddVisit.Location = new Point(20, 3);
-            butAddVisit.Margin = new Padding(20, 3, 20, 3);
+            butAddVisit.Location = new Point(25, 4);
+            butAddVisit.Margin = new Padding(25, 4, 25, 4);
             butAddVisit.Name = "butAddVisit";
-            butAddVisit.Padding = new Padding(10, 0, 0, 0);
-            butAddVisit.Size = new Size(211, 49);
+            butAddVisit.Padding = new Padding(12, 0, 0, 0);
+            butAddVisit.Size = new Size(263, 61);
             butAddVisit.TabIndex = 0;
             butAddVisit.Text = "Добавить";
             butAddVisit.TextAlign = ContentAlignment.MiddleRight;
@@ -787,10 +806,12 @@
             // groupBox5
             // 
             groupBox5.Controls.Add(dataGridViewOrder);
-            groupBox5.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox5.Location = new Point(789, 8);
+            groupBox5.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            groupBox5.Location = new Point(986, 10);
+            groupBox5.Margin = new Padding(4);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(751, 536);
+            groupBox5.Padding = new Padding(4);
+            groupBox5.Size = new Size(939, 670);
             groupBox5.TabIndex = 12;
             groupBox5.TabStop = false;
             groupBox5.Text = "Заказы";
@@ -822,7 +843,8 @@
             dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
             dataGridViewOrder.DefaultCellStyle = dataGridViewCellStyle11;
             dataGridViewOrder.Dock = DockStyle.Fill;
-            dataGridViewOrder.Location = new Point(3, 30);
+            dataGridViewOrder.Location = new Point(4, 41);
+            dataGridViewOrder.Margin = new Padding(4);
             dataGridViewOrder.MultiSelect = false;
             dataGridViewOrder.Name = "dataGridViewOrder";
             dataGridViewOrder.ReadOnly = true;
@@ -830,16 +852,18 @@
             dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
             dataGridViewOrder.RowsDefaultCellStyle = dataGridViewCellStyle12;
             dataGridViewOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewOrder.Size = new Size(745, 503);
+            dataGridViewOrder.Size = new Size(931, 625);
             dataGridViewOrder.TabIndex = 18;
             // 
             // groupBox6
             // 
             groupBox6.Controls.Add(dataGridViewVisit);
-            groupBox6.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBox6.Location = new Point(9, 8);
+            groupBox6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            groupBox6.Location = new Point(11, 10);
+            groupBox6.Margin = new Padding(4);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(757, 536);
+            groupBox6.Padding = new Padding(4);
+            groupBox6.Size = new Size(946, 670);
             groupBox6.TabIndex = 13;
             groupBox6.TabStop = false;
             groupBox6.Text = "Посещения";
@@ -871,7 +895,8 @@
             dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
             dataGridViewVisit.DefaultCellStyle = dataGridViewCellStyle14;
             dataGridViewVisit.Dock = DockStyle.Fill;
-            dataGridViewVisit.Location = new Point(3, 30);
+            dataGridViewVisit.Location = new Point(4, 41);
+            dataGridViewVisit.Margin = new Padding(4);
             dataGridViewVisit.MultiSelect = false;
             dataGridViewVisit.Name = "dataGridViewVisit";
             dataGridViewVisit.ReadOnly = true;
@@ -879,24 +904,26 @@
             dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
             dataGridViewVisit.RowsDefaultCellStyle = dataGridViewCellStyle15;
             dataGridViewVisit.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewVisit.Size = new Size(751, 503);
+            dataGridViewVisit.Size = new Size(938, 625);
             dataGridViewVisit.TabIndex = 18;
             dataGridViewVisit.SelectionChanged += dataGridViewVisit_SelectionChanged;
             // 
             // tabPageAdmin
             // 
-            tabPageAdmin.Location = new Point(4, 14);
+            tabPageAdmin.Location = new Point(4, 34);
+            tabPageAdmin.Margin = new Padding(4);
             tabPageAdmin.Name = "tabPageAdmin";
-            tabPageAdmin.Size = new Size(1543, 603);
+            tabPageAdmin.Size = new Size(1931, 742);
             tabPageAdmin.TabIndex = 4;
             tabPageAdmin.Text = "Админ";
             tabPageAdmin.UseVisualStyleBackColor = true;
             // 
             // tabPageCopy
             // 
-            tabPageCopy.Location = new Point(4, 14);
+            tabPageCopy.Location = new Point(4, 34);
+            tabPageCopy.Margin = new Padding(4);
             tabPageCopy.Name = "tabPageCopy";
-            tabPageCopy.Size = new Size(1543, 603);
+            tabPageCopy.Size = new Size(1931, 742);
             tabPageCopy.TabIndex = 5;
             tabPageCopy.Text = "Копирование";
             tabPageCopy.UseVisualStyleBackColor = true;
@@ -908,7 +935,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { оПрограммеToolStripMenuItem, администрированиеToolStripMenuItem, резервноеКопированиеToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1581, 34);
+            menuStrip1.Padding = new Padding(8, 2, 0, 2);
+            menuStrip1.Size = new Size(1976, 41);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -916,25 +944,25 @@
             // 
             оПрограммеToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { обАвтореToolStripMenuItem, справкаToolStripMenuItem });
             оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            оПрограммеToolStripMenuItem.Size = new Size(156, 30);
+            оПрограммеToolStripMenuItem.Size = new Size(186, 37);
             оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // обАвтореToolStripMenuItem
             // 
             обАвтореToolStripMenuItem.Name = "обАвтореToolStripMenuItem";
-            обАвтореToolStripMenuItem.Size = new Size(197, 30);
+            обАвтореToolStripMenuItem.Size = new Size(237, 42);
             обАвтореToolStripMenuItem.Text = "Об авторе";
             // 
             // справкаToolStripMenuItem
             // 
             справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            справкаToolStripMenuItem.Size = new Size(197, 30);
+            справкаToolStripMenuItem.Size = new Size(237, 42);
             справкаToolStripMenuItem.Text = "Справка";
             // 
             // администрированиеToolStripMenuItem
             // 
             администрированиеToolStripMenuItem.Name = "администрированиеToolStripMenuItem";
-            администрированиеToolStripMenuItem.Size = new Size(228, 30);
+            администрированиеToolStripMenuItem.Size = new Size(275, 37);
             администрированиеToolStripMenuItem.Tag = "4";
             администрированиеToolStripMenuItem.Text = "Администрирование";
             администрированиеToolStripMenuItem.Click += butMenu_Click;
@@ -942,7 +970,7 @@
             // резервноеКопированиеToolStripMenuItem
             // 
             резервноеКопированиеToolStripMenuItem.Name = "резервноеКопированиеToolStripMenuItem";
-            резервноеКопированиеToolStripMenuItem.Size = new Size(256, 30);
+            резервноеКопированиеToolStripMenuItem.Size = new Size(309, 37);
             резервноеКопированиеToolStripMenuItem.Tag = "5";
             резервноеКопированиеToolStripMenuItem.Text = "Резервное копирование";
             резервноеКопированиеToolStripMenuItem.Click += butMenu_Click;
@@ -968,7 +996,7 @@
             button13.Dock = DockStyle.Fill;
             button13.FlatAppearance.BorderSize = 0;
             button13.FlatStyle = FlatStyle.Flat;
-            button13.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button13.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button13.ForeColor = Color.FromArgb(239, 239, 239);
             button13.Image = Properties.Resources.IconDelete;
             button13.ImageAlign = ContentAlignment.MiddleLeft;
@@ -988,7 +1016,7 @@
             button14.Dock = DockStyle.Fill;
             button14.FlatAppearance.BorderSize = 0;
             button14.FlatStyle = FlatStyle.Flat;
-            button14.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button14.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button14.ForeColor = Color.FromArgb(239, 239, 239);
             button14.Image = Properties.Resources.IconEdit;
             button14.ImageAlign = ContentAlignment.MiddleLeft;
@@ -1004,15 +1032,16 @@
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
-            ClientSize = new Size(1581, 772);
+            ClientSize = new Size(1976, 965);
             Controls.Add(tabControlMain);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainForm";

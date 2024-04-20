@@ -44,7 +44,7 @@ namespace DbClub
 
         private void dataGridViewVisit_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridViewVisit.SelectedRows.Count != 0 && !flagWait) dbService.LoadDataGrid(cmdOrder, tableOrder, dataGridViewOrder, 1, [dataGridViewVisit.SelectedRows[0].Cells[0].Value.ToString()],ref flagWait);
+            if (dataGridViewVisit.SelectedRows.Count != 0 && !flagWait) dbService.LoadDataGrid(cmdOrder, tableOrder, dataGridViewOrder, 1, [dataGridViewVisit.SelectedRows[0].Cells[0].Value.ToString()], ref flagWait);
         }
 
         void addEditVisit(bool flag)
@@ -76,7 +76,7 @@ namespace DbClub
                 param[2] = contextVisit.dateTimePickerStart.Value.ToString("yyyy-MM-dd HH:mm");
                 param[3] = contextVisit.checkBoxEnd.Checked ? contextVisit.dateTimePickerEnd.Value.ToString("yyyy-MM-dd HH:mm") : null;
                 dbService.OperationOnRecord(flag ? "UPDATE visits SET visitor_id = @_idVis, computer_id = @_idComp, start_time = @start, end_time = @end WHERE id = @_id;" : "INSERT INTO visits VALUES (NULL,@_idVis,@_idComp,@start,@end);", param);
-                if (!flagWait) dbService.LoadDataGrid(cmdVisit, tableVisit, dataGridViewVisit, 1,ref flagWait);
+                if (!flagWait) dbService.LoadDataGrid(cmdVisit, tableVisit, dataGridViewVisit, 1, ref flagWait);
             }
         }
 
@@ -88,7 +88,7 @@ namespace DbClub
             if (MessageBox.Show("Вы действительно хотите удалить данную запись?", "Удаление...", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 dbService.DeleteRecord(dataGridViewVisit.SelectedRows[0].Cells[0].Value.ToString(), "DELETE FROM visits WHERE id = @id");
-                if (!flagWait) dbService.LoadDataGrid(cmdVisit, tableVisit, dataGridViewVisit, 1,ref flagWait);
+                if (!flagWait) dbService.LoadDataGrid(cmdVisit, tableVisit, dataGridViewVisit, 1, ref flagWait);
             }
         }
 
@@ -101,6 +101,41 @@ namespace DbClub
         private void butCatalog_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((Button)sender).Tag.ToString());
 
         private void butMenu_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((ToolStripMenuItem)sender).Tag.ToString());
+
+        private void addEditComputers(bool flag)
+        {
+            ContextComputers contextComputers = new ContextComputers();
+            string[] param = new string[4];
+            if (flag)
+            {
+                contextComputers.Text = "Изменение компьютера";
+                contextComputers.textBoxCompName.Text = dataGridViewComp.SelectedRows[0].Cells[1].Value.ToString();
+                contextComputers.textBoxSpecifications.Text = dataGridViewComp.SelectedRows[0].Cells[2].Value.ToString();
+                contextComputers.comboBoxStatus.SelectedItem = dataGridViewComp.SelectedRows[0].Cells[3].Value.ToString();
+                param[3] = dataGridViewComp.SelectedRows[0].Cells[0].Value.ToString();
+            }
+            if (contextComputers.ShowDialog() == DialogResult.OK)
+            {
+                param[0] = contextComputers.textBoxCompName.Text;
+                param[1] = contextComputers.textBoxSpecifications.Text;
+                param[2] = contextComputers.comboBoxStatus.SelectedItem.ToString();
+                dbService.OperationOnRecord(flag ? "UPDATE computers SET computer_name = @nameComp, specifications = @specComp, status = @statusComp WHERE id = @idComp" : "INSERT INTO `computers`(`id`, `computer_name`, `specifications`, `status`) VALUES (NULL,@nameComp,@specComp,@statusComp)", param);
+                if (!flagWait) dbService.LoadDataGrid(cmdComp, tableComp, dataGridViewComp, 1, ref flagWait);
+            }  
+        }
+
+        private void butAddCar_Click(object sender, EventArgs e) => addEditComputers(false);
+
+        private void butEditCar_Click(object sender, EventArgs e) => addEditComputers(true);
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
 
         
     }
