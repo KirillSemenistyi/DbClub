@@ -327,6 +327,7 @@
             butDeleteCar.Text = "Удалить";
             butDeleteCar.TextAlign = ContentAlignment.MiddleRight;
             butDeleteCar.UseVisualStyleBackColor = false;
+            butDeleteCar.Click += butDeleteCar_Click;
             // 
             // butEditCar
             // 

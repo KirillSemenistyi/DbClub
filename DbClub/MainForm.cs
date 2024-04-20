@@ -121,12 +121,22 @@ namespace DbClub
                 param[2] = contextComputers.comboBoxStatus.SelectedItem.ToString();
                 dbService.OperationOnRecord(flag ? "UPDATE computers SET computer_name = @nameComp, specifications = @specComp, status = @statusComp WHERE id = @idComp" : "INSERT INTO `computers`(`id`, `computer_name`, `specifications`, `status`) VALUES (NULL,@nameComp,@specComp,@statusComp)", param);
                 if (!flagWait) dbService.LoadDataGrid(cmdComp, tableComp, dataGridViewComp, 1, ref flagWait);
-            }  
+            }
         }
 
         private void butAddCar_Click(object sender, EventArgs e) => addEditComputers(false);
 
         private void butEditCar_Click(object sender, EventArgs e) => addEditComputers(true);
+
+        private void butDeleteCar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите удалить данную запись?", "Удаление...", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                dbService.DeleteRecord(dataGridViewComp.SelectedRows[0].Cells[0].Value.ToString(), "DELETE FROM computers WHERE id = @id");
+                if (!flagWait) dbService.LoadDataGrid(cmdComp, tableComp, dataGridViewComp, 1, ref flagWait);
+            }
+        }
+
         private void button17_Click(object sender, EventArgs e)
         {
 
@@ -136,7 +146,5 @@ namespace DbClub
         {
 
         }
-
-        
     }
 }
