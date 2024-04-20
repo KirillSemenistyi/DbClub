@@ -37,9 +37,13 @@
             textBoxPass = new TextBox();
             butEnter = new Button();
             butEye = new Button();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            button3 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -126,6 +130,59 @@
             butEye.UseVisualStyleBackColor = false;
             butEye.Click += butEye_Click;
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 4;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.Controls.Add(button3, 0, 0);
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(200, 100);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(210, 74, 74);
+            button3.Dock = DockStyle.Fill;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button3.ForeColor = Color.FromArgb(239, 239, 239);
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(3, 3);
+            button3.Name = "button3";
+            button3.Padding = new Padding(10, 0, 0, 0);
+            button3.Size = new Size(44, 94);
+            button3.TabIndex = 3;
+            button3.Tag = "2";
+            button3.Text = "Поставки";
+            button3.TextAlign = ContentAlignment.MiddleRight;
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(210, 74, 74);
+            button2.Dock = DockStyle.Fill;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Marker Felt", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button2.ForeColor = Color.FromArgb(239, 239, 239);
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(3, 3);
+            button2.Name = "button2";
+            button2.Padding = new Padding(10, 0, 0, 0);
+            button2.Size = new Size(44, 94);
+            button2.TabIndex = 2;
+            button2.Tag = "3";
+            button2.Text = "Заказы";
+            button2.TextAlign = ContentAlignment.MiddleRight;
+            button2.UseVisualStyleBackColor = false;
+            // 
             // ContextLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -149,6 +206,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,5 +221,8 @@
         private TextBox textBoxPass;
         private Button butEnter;
         private Button butEye;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button3;
+        private Button button2;
     }
 }
