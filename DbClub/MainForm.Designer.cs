@@ -420,6 +420,7 @@
             button4.Text = "Удалить";
             button4.TextAlign = ContentAlignment.MiddleRight;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -440,6 +441,7 @@
             button5.Text = "Изменить";
             button5.TextAlign = ContentAlignment.MiddleRight;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += buttonEditVisitor_Click;
             // 
             // button6
             // 
@@ -460,6 +462,7 @@
             button6.Text = "Добавить";
             button6.TextAlign = ContentAlignment.MiddleRight;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += buttonAddVisitor_Click;
             // 
             // dataGridViewVisitors
             // 

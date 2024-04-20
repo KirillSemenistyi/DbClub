@@ -77,7 +77,7 @@
             textBoxCompName.Font = new Font("Times New Roman", 16.2F);
             textBoxCompName.Location = new Point(262, 18);
             textBoxCompName.Name = "textBoxCompName";
-            textBoxCompName.Size = new Size(499, 45);
+            textBoxCompName.Size = new Size(440, 45);
             textBoxCompName.TabIndex = 3;
             // 
             // textBoxSpecifications
@@ -86,7 +86,7 @@
             textBoxSpecifications.Location = new Point(262, 77);
             textBoxSpecifications.Multiline = true;
             textBoxSpecifications.Name = "textBoxSpecifications";
-            textBoxSpecifications.Size = new Size(499, 145);
+            textBoxSpecifications.Size = new Size(440, 145);
             textBoxSpecifications.TabIndex = 4;
             // 
             // panel1
@@ -102,23 +102,24 @@
             panel1.Controls.Add(label2);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(776, 426);
+            panel1.Size = new Size(708, 380);
             panel1.TabIndex = 5;
             // 
             // tableLayoutPanel5
             // 
+            tableLayoutPanel5.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tableLayoutPanel5.ColumnCount = 2;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 25F));
             tableLayoutPanel5.Controls.Add(butCancel, 0, 0);
             tableLayoutPanel5.Controls.Add(butAddComp, 0, 0);
-            tableLayoutPanel5.Location = new Point(50, 353);
+            tableLayoutPanel5.Location = new Point(8, 302);
             tableLayoutPanel5.Margin = new Padding(4);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Size = new Size(692, 69);
+            tableLayoutPanel5.Size = new Size(695, 69);
             tableLayoutPanel5.TabIndex = 16;
             // 
             // butCancel
@@ -132,11 +133,11 @@
             butCancel.ForeColor = Color.FromArgb(239, 239, 239);
             butCancel.Image = Properties.Resources.IconCancel;
             butCancel.ImageAlign = ContentAlignment.MiddleLeft;
-            butCancel.Location = new Point(371, 4);
+            butCancel.Location = new Point(372, 4);
             butCancel.Margin = new Padding(25, 4, 25, 4);
             butCancel.Name = "butCancel";
             butCancel.Padding = new Padding(12, 0, 0, 0);
-            butCancel.Size = new Size(296, 61);
+            butCancel.Size = new Size(298, 61);
             butCancel.TabIndex = 1;
             butCancel.Text = "Отмена";
             butCancel.TextAlign = ContentAlignment.MiddleRight;
@@ -156,7 +157,7 @@
             butAddComp.Margin = new Padding(25, 4, 25, 4);
             butAddComp.Name = "butAddComp";
             butAddComp.Padding = new Padding(12, 0, 0, 0);
-            butAddComp.Size = new Size(296, 61);
+            butAddComp.Size = new Size(297, 61);
             butAddComp.TabIndex = 0;
             butAddComp.Text = "Подтвердить";
             butAddComp.TextAlign = ContentAlignment.MiddleRight;
@@ -171,7 +172,7 @@
             comboBoxStatus.Items.AddRange(new object[] { "available", "occupied", "maintenance" });
             comboBoxStatus.Location = new Point(262, 237);
             comboBoxStatus.Name = "comboBoxStatus";
-            comboBoxStatus.Size = new Size(499, 44);
+            comboBoxStatus.Size = new Size(443, 44);
             comboBoxStatus.TabIndex = 5;
             // 
             // ContextComputers
@@ -179,7 +180,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(732, 404);
             Controls.Add(panel1);
             Name = "ContextComputers";
             Text = "Добавление компьютера";

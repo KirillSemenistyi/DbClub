@@ -95,12 +95,7 @@ namespace DbClub
 
         #endregion
 
-        //Other
-
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e) => new ContextLogin().Show();
-        private void butCatalog_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((Button)sender).Tag.ToString());
-
-        private void butMenu_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((ToolStripMenuItem)sender).Tag.ToString());
+        #region Computers
 
         private void addEditComputers(bool flag)
         {
@@ -137,6 +132,15 @@ namespace DbClub
             }
         }
 
+        #endregion
+
+        //Other
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e) => new ContextLogin().Show();
+        private void butCatalog_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((Button)sender).Tag.ToString());
+
+        private void butMenu_Click(object sender, EventArgs e) => tabControlMain.SelectedIndex = int.Parse(((ToolStripMenuItem)sender).Tag.ToString());
+
         private void button17_Click(object sender, EventArgs e)
         {
 
@@ -146,5 +150,48 @@ namespace DbClub
         {
 
         }
+
+        #region Visitors
+
+        private void addEditVisitors(bool flag)
+        {
+            ContextVisitors contextVisitors = new ContextVisitors();
+            string[] param = new string[7];
+            if (flag)
+            {
+                contextVisitors.textBoxSurname.Text = dataGridViewVisitors.SelectedRows[0].Cells[2].Value.ToString();
+                contextVisitors.textBoxName.Text = dataGridViewVisitors.SelectedRows[0].Cells[1].Value.ToString();
+                contextVisitors.textBoxLastname.Text = dataGridViewVisitors.SelectedRows[0].Cells[3].Value.ToString();
+                contextVisitors.textBoxEmail.Text = dataGridViewVisitors.SelectedRows[0].Cells[4].Value.ToString();
+                contextVisitors.maskedTextBoxPhoneNumber.Text = dataGridViewVisitors.SelectedRows[0].Cells[5].Value.ToString();
+                param[6] = dataGridViewVisitors.SelectedRows[0].Cells[0].Value.ToString();
+            }
+            if (contextVisitors.ShowDialog() == DialogResult.OK)
+            {
+                param[0] = contextVisitors.textBoxSurname.Text;
+                param[1] = contextVisitors.textBoxName.Text;
+                param[2] = contextVisitors.textBoxLastname.Text;
+                param[3] = contextVisitors.textBoxEmail.Text;
+                param[4] = contextVisitors.maskedTextBoxPhoneNumber.Text;
+                param[5] = DateTime.Now.ToString("yyyy-MM-dd");
+                dbService.OperationOnRecord(flag ? "UPDATE visitors SET surname = @surname, first_name = @name, last_name = @patronymic, email = @emailAddress, phone = @phoneNumber, registration_date = @date WHERE id = @idVisitor" : "INSERT INTO `visitors`(`id`, `surname`, `first_name`, `last_name`, `email`, `phone`, `registration_date`) VALUES (NULL,@surname,@name,@patronymic,@emailAddress,@phoneNumber,@date)", param);
+                if (!flagWait) dbService.LoadDataGrid(cmdVisitors, tableVisitors, dataGridViewVisitors, 1, ref flagWait);
+            }
+        }
+
+        private void buttonAddVisitor_Click(object sender, EventArgs e) => addEditVisitors(false);
+
+        private void buttonEditVisitor_Click(object sender, EventArgs e) => addEditVisitors(true);
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите удалить данную запись?", "Удаление...", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                dbService.DeleteRecord(dataGridViewVisitors.SelectedRows[0].Cells[0].Value.ToString(), "DELETE FROM visitors WHERE id = @id");
+                if (!flagWait) dbService.LoadDataGrid(cmdVisitors, tableVisitors, dataGridViewVisitors, 1, ref flagWait);
+            }
+        }
+
+        #endregion
     }
 }
